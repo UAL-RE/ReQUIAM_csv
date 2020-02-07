@@ -14,6 +14,14 @@ def create_csv(url, outfile):
     # Read in URL that is of CSV format or CSV-exported
     df = pd.read_csv(url)
 
+    # This will be the working copy that will be produced
+    df_new = df.copy(deep=True)
+    drop_labels = ['Overall Themes',
+                   'Overall Themes Portal',
+                   'Departments/Colleges/Labs/Centers (Old)',
+                   'Additional Information']
+    df_new = df_new.drop(labels=drop_labels, axis=1)
+
     # Retrieve overall themes, corresponding portal and entries
     overall_theme0        = df['Overall Themes']
     overall_theme_portal0 = df['Overall Themes Portal']
