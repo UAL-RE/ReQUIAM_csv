@@ -50,8 +50,8 @@ def create_csv(url, outfile):
 
         sub_portals    = df['Sub-portals'][sub_index]
 
-        na_index   = np.where(sub_portals.isna().values)[0]
-        na_index   = sub_index[na_index]
+        na_index = np.where(sub_portals.isna().values)[0]
+        na_index = sub_index[na_index]
         df_new['Sub-portals'][na_index] = overall_theme_portal[i]
         df_new['Research Themes'][na_index] = overall_theme[i]
 
@@ -64,6 +64,10 @@ def create_csv(url, outfile):
                   'Departments/Colleges/Labs/Centers',
                   'Parent Organization']
     df_new = df_new[cols_order]
+
+    # Remove rows that do not contain an org code
+    final_rows = np.where(df_new['Org Code'].isna())[0]
+    df_new = df_new.drop(final_rows)
+
+    # Write file
     df_new.to_csv(outfile, index=False)
-
-
