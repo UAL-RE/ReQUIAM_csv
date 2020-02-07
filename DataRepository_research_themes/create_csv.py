@@ -21,6 +21,8 @@ def create_csv(url, outfile):
 
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)
+
+    # Remove labels that we will not need
     drop_labels = ['Overall Themes',
                    'Overall Themes Portal',
                    'Departments/Colleges/Labs/Centers (Old)',
@@ -53,6 +55,15 @@ def create_csv(url, outfile):
         df_new['Sub-portals'][na_index] = overall_theme_portal[i]
         df_new['Research Themes'][na_index] = overall_theme[i]
 
-    df_new.to_csv(outfile)
+    # Remove entries for the overall theme
+    df_new = df_new.drop(overall_theme_index)
+
+    cols_order = ['Org Code',
+                  'Sub-portals',
+                  'Research Themes',
+                  'Departments/Colleges/Labs/Centers',
+                  'Parent Organization']
+    df_new = df_new[cols_order]
+    df_new.to_csv(outfile, index=False)
 
 
