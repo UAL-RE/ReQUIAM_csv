@@ -66,8 +66,8 @@ def create_csv(url, outfile):
     df_new = df_new[cols_order]
 
     # Remove rows that do not contain an org code
-    final_rows = np.where(df_new['Org Code'].isna())[0]
-    df_new = df_new.drop(final_rows)
+    # final_rows = np.where(df_new['Org Code'].isna())[0]
+    # df_new = df_new.drop(final_rows)
 
     # Write file
     df_new.to_csv(outfile, index=False)
