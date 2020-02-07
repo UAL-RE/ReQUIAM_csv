@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+from urllib.error import URLError
 
 def create_csv(url, outfile):
     """
@@ -12,7 +12,12 @@ def create_csv(url, outfile):
     :return:
     """
     # Read in URL that is of CSV format or CSV-exported
-    df = pd.read_csv(url)
+    try:
+        df = pd.read_csv(url)
+    except URLError:
+        print("Unable to retrieve data from URL !")
+        print("Please check your internet connection !")
+        return
 
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)
