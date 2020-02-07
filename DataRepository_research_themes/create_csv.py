@@ -32,23 +32,22 @@ def create_csv(url, outfile):
     overall_theme        = overall_theme0.values[overall_theme_index]
     overall_theme_portal = overall_theme_portal0.values[overall_theme_index]
 
-    portal_names = np.array([''] * df.shape[0])
-
     # Identify portal for each university organization
     for i in range(len(overall_theme)):
+        print("# Working on {}".format(overall_theme[i]))
+
         if i != len(overall_theme)-1:
             sub_index = np.arange(overall_theme_index[i]+1, overall_theme_index[i+1])
         else:
             sub_index = np.arange(overall_theme_index[i]+1, df.shape[0])
 
-        research_theme = df['Research Themes'][sub_index]
         sub_portals    = df['Sub-portals'][sub_index]
 
         na_index   = np.where(sub_portals.isna().values)[0]
         na_index   = sub_index[na_index]
-        portal_names[na_index] = overall_theme_portal[i]
+        df_new['Sub-portals'][na_index] = overall_theme_portal[i]
+        df_new['Research Themes'][na_index] = overall_theme[i]
 
-        uniq_index = np.where(sub_portals.notna().values)[0]
-        portal_names[sub_index[uniq_index]] = sub_portals[uniq_index]
+    df_new.to_csv(outfile)
 
-    print(portal_names)
+
