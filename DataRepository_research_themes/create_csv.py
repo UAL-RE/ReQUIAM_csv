@@ -2,13 +2,14 @@ import pandas as pd
 import numpy as np
 from urllib.error import URLError
 
+
 def create_csv(url, outfile):
     """
     Purpose:
       This code generates a list of organization codes and associated portals
 
-    :param url:
-    :param outfile:
+    :param url: Full url to CSV
+    :param outfile: Exported file in CSV format
     :return:
     """
     # Read in URL that is of CSV format or CSV-exported
@@ -48,7 +49,7 @@ def create_csv(url, outfile):
         else:
             sub_index = np.arange(overall_theme_index[i]+1, df.shape[0])
 
-        sub_portals    = df['Sub-portals'][sub_index]
+        sub_portals = df['Sub-portals'][sub_index]
 
         na_index = np.where(sub_portals.isna().values)[0]
         na_index = sub_index[na_index]
