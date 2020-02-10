@@ -55,8 +55,13 @@ def create_csv(url, outfile):
         df_new['Sub-portals'][na_index] = overall_theme_portal[i]
         df_new['Research Themes'][na_index] = overall_theme[i]
 
-    # Remove entries for the overall theme
-    df_new = df_new.drop(overall_theme_index)
+    # Identify rows that do not contain an org code
+    no_org_code = np.where(df_new['Org Code'].isna().values)[0]
+
+    # Remove entries without org code. This ensures that the overall theme are ignored
+    drop_rows = np.unique(np.concatenate((overall_theme_index, no_org_code)))
+
+    df_new = df_new.drop(drop_rows)
 
     cols_order = ['Org Code',
                   'Sub-portals',
@@ -64,10 +69,6 @@ def create_csv(url, outfile):
                   'Departments/Colleges/Labs/Centers',
                   'Parent Organization']
     df_new = df_new[cols_order]
-
-    # Remove rows that do not contain an org code
-    # final_rows = np.where(df_new['Org Code'].isna())[0]
-    # df_new = df_new.drop(final_rows)
 
     # Write file
     df_new.to_csv(outfile, index=False)
