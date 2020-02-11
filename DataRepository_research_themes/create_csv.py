@@ -1,18 +1,25 @@
+from os import path
 import pandas as pd  # Currently using v0.25.3
 import numpy as np   # Currently using v1.18.0
 from urllib.error import URLError
+
+co_filename = __file__
+co_dir = path.dirname(co_filename)
 
 
 def create_csv(url, outfile):
     """
     Purpose:
-      This code generates a list of organization codes and associated portals
-      for figshare account management.  The initial spreadsheet, which is
-      curated by UA Libraries, is provided through the [url] input.
+      This code generates a list of organization codes and associated
+      portals for figshare account management.
+       - The initial spreadsheet, which is curated by UA Libraries, is
+         provided through the [url] input.
+       - The exported CSV file will be placed in this git repo. Current
+         path and file preference:
+           DataRepository_research_themes/data/research_themes.csv
 
     :param url: Full url to CSV
     :param outfile: Exported file in CSV format
-    :return:
     """
 
     # Read in URL that is of CSV format or CSV-exported (e.g., Google Sheets)
@@ -78,5 +85,5 @@ def create_csv(url, outfile):
                   'Parent Organization']
     df_new = df_new[cols_order]
 
-    # Write file
-    df_new.to_csv(outfile, index=False)
+    # Write file.  File is placed within the git repository
+    df_new.to_csv(path.join(co_dir, outfile), index=False)
