@@ -1,5 +1,5 @@
-import pandas as pd
-import numpy as np
+import pandas as pd  # Currently using v0.25.3
+import numpy as np   # Currently using v1.18.0
 from urllib.error import URLError
 
 
@@ -7,12 +7,15 @@ def create_csv(url, outfile):
     """
     Purpose:
       This code generates a list of organization codes and associated portals
+      for figshare account management.  The initial spreadsheet, which is
+      curated by UA Libraries, is provided through the [url] input.
 
     :param url: Full url to CSV
     :param outfile: Exported file in CSV format
     :return:
     """
-    # Read in URL that is of CSV format or CSV-exported
+
+    # Read in URL that is of CSV format or CSV-exported (e.g., Google Sheets)
     try:
         df = pd.read_csv(url)
     except URLError:
@@ -23,7 +26,7 @@ def create_csv(url, outfile):
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)
 
-    # Remove labels that we will not need
+    # Remove unused columns
     drop_labels = ['Overall Themes',
                    'Overall Themes Portal',
                    'Departments/Colleges/Labs/Centers (Old)',
