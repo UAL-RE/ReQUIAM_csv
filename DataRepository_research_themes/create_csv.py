@@ -29,6 +29,11 @@ def inspect_csv(df):
     :return:
     """
 
+    no_org_code = np.where(df['Org Code'].isna().values)[0]
+
+    if len(no_org_code) > 0:
+        print("MINOR: Entries without Org Code found!")
+
 
 def create_csv(url, outfile):
     """
@@ -52,6 +57,8 @@ def create_csv(url, outfile):
         print("Unable to retrieve data from URL !")
         print("Please check your internet connection !")
         return
+
+    inspect_csv(df)
 
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)
