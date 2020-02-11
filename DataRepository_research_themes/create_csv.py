@@ -48,9 +48,11 @@ def create_csv(url, outfile):
         print("# Working on {}".format(overall_theme[i]))
 
         if i != len(overall_theme)-1:
-            sub_index = np.arange(overall_theme_index[i]+1, overall_theme_index[i+1])
+            sub_index = np.arange(overall_theme_index[i]+1,
+                                  overall_theme_index[i+1])
         else:
-            sub_index = np.arange(overall_theme_index[i]+1, df.shape[0])
+            sub_index = np.arange(overall_theme_index[i]+1,
+                                  df.shape[0])
 
         sub_portals = df['Sub-portals'][sub_index]
 
@@ -63,10 +65,12 @@ def create_csv(url, outfile):
     no_org_code = np.where(df_new['Org Code'].isna().values)[0]
 
     # Remove entries without org code. This ensures that the overall theme are ignored
-    drop_rows = np.unique(np.concatenate((overall_theme_index, no_org_code)))
+    concat_rows = np.concatenate((overall_theme_index, no_org_code))
+    drop_rows = np.unique(concat_rows)
 
     df_new = df_new.drop(drop_rows)
 
+    # Re-order columns
     cols_order = ['Org Code',
                   'Sub-portals',
                   'Research Themes',
