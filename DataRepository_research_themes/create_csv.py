@@ -7,6 +7,29 @@ co_filename = __file__
 co_dir = path.dirname(co_filename)
 
 
+def inspect_csv(df):
+    """
+    Purpose:
+      Inspects Google Sheet CSV-export table to identify issues.
+      Minor issues are logged. Major issues prevent creating the
+      final CSV file.
+
+      Minor issues include:
+       - Entries without an 'Org Code' (excluded in final export)
+       - TBD
+
+      Major issues include:
+       - Invalid/incorrect entries in 'Departments/Colleges/Labs/Centers'
+         This result in not getting a proper Org Code
+       - Missing 'Research Themes' or Sub-portals if either one is provided
+       - TBD
+
+    :param df: pandas dataframe
+
+    :return:
+    """
+
+
 def create_csv(url, outfile):
     """
     Purpose:
