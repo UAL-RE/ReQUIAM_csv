@@ -7,6 +7,21 @@ co_filename = __file__
 co_dir = path.dirname(co_filename)
 
 
+def no_org_code_index(df):
+    """
+    Purpose:
+      Identify entries without an Org Code.  This is based on whether
+      the value is set to NaN
+
+    :param df: pandas dataframe
+    :return no_org_code: numpy array containing elements
+    """
+
+    no_org_code = np.where(df['Org Code'].isna().values)[0]
+
+    return no_org_code
+
+
 def inspect_csv(df):
     """
     Purpose:
@@ -29,7 +44,7 @@ def inspect_csv(df):
     :return:
     """
 
-    no_org_code = np.where(df['Org Code'].isna().values)[0]
+    no_org_code = no_org_code_index(df)
 
     if len(no_org_code) > 0:
         print("MINOR: Entries without Org Code found!")
@@ -99,7 +114,7 @@ def create_csv(url, outfile):
         df_new['Research Themes'][na_index] = overall_theme[i]
 
     # Identify rows that do not contain an org code
-    no_org_code = np.where(df_new['Org Code'].isna().values)[0]
+    no_org_code = no_org_code_index(df_new)
 
     # Remove entries without org code. This ensures that the overall theme are ignored
     concat_rows = np.concatenate((overall_theme_index, no_org_code))
