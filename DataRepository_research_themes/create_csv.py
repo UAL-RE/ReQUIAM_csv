@@ -50,12 +50,14 @@ def inspect_csv(df):
     # Check for entries without org code
     no_org_code = no_org_code_index(df)
 
-    if len(no_org_code) > 0:
+    if no_org_code.size > 0:
         print("MINOR: Entries without Org Code found!")
         print("MINOR: Index below:")
         array_str0 = np.array2string(no_org_code).split('\n')
         for arr_str in array_str0:
             print(arr_str)
+    else:
+        print("PASS: Org Code available for all entries!")
 
     # MAJOR INSPECTION
 
