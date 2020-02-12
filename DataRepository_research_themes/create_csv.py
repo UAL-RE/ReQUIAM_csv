@@ -48,6 +48,10 @@ def inspect_csv(df):
 
     if len(no_org_code) > 0:
         print("MINOR: Entries without Org Code found!")
+        print("MINOR: Index below:")
+        array_str0 = np.array2string(no_org_code).split('\n')
+        for arr_str in array_str0:
+            print(arr_str)
 
 
 def create_csv(url, outfile):
