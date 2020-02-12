@@ -34,6 +34,7 @@ def inspect_csv(df):
        - TBD
 
       Major issues include:
+       - Duplicate entries based on Org Code
        - Invalid/incorrect entries in 'Departments/Colleges/Labs/Centers'
          This result in not getting a proper Org Code
        - Missing 'Research Themes' or Sub-portals if either one is provided
@@ -44,6 +45,9 @@ def inspect_csv(df):
     :return:
     """
 
+    # MINOR INSPECTION
+
+    # Check for entries without org code
     no_org_code = no_org_code_index(df)
 
     if len(no_org_code) > 0:
@@ -53,6 +57,21 @@ def inspect_csv(df):
         for arr_str in array_str0:
             print(arr_str)
 
+    # MAJOR INSPECTION
+
+    # Check for number of unique cases
+    not_na = df['Org Code'].loc[df['Org Code'].notna()]
+    unique, unique_counts = np.unique(not_na, return_counts=True)
+    n_dup = not_na.size - unique.size
+    if n_dup != 0:
+        print("MAJOR: Duplicate entries found, N={}!".format(n_dup))
+        print("MAJOR: Please manually fix spreadsheet before proceeding!")
+        print("MAJOR: Duplicate entries below:")
+        print("MAJOR: Org Code : [Spreadsheet Index]")
+        dup = np.where(unique_counts > 1)[0]
+        for dd in dup:
+            df_repeat = df.loc[df['Org Code'] == str(unique[dd])]
+            print("{} : {}".format(unique[dd], df_repeat.index.values+2))
 
 def create_csv(url, outfile):
     """
