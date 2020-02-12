@@ -53,7 +53,9 @@ def inspect_csv(df):
     :return:
     """
 
-    # MINOR INSPECTION
+    check = 0
+
+    # MINOR INSPECTIONS
 
     # Check for entries without org code
     no_org_code = no_org_code_index(df)
@@ -67,13 +69,15 @@ def inspect_csv(df):
     else:
         print("PASS: Org Code available for all entries!")
 
-    # MAJOR INSPECTION
+    # MAJOR INSPECTIONS
 
     # Check for number of unique cases
     not_na = df['Org Code'].loc[df['Org Code'].notna()]
     unique, unique_counts = np.unique(not_na, return_counts=True)
     n_dup = not_na.size - unique.size
-    if n_dup != 0:
+    if n_dup == 0:
+        print("PASS: No duplicate entries found!")
+    else:
         print("MAJOR: Duplicate entries found, N={}!".format(n_dup))
         print("MAJOR: Please manually fix spreadsheet before proceeding!")
         print("MAJOR: Duplicate entries below:")
@@ -81,10 +85,28 @@ def inspect_csv(df):
         dup = np.where(unique_counts > 1)[0]
         for dd in dup:
             df_repeat = df.loc[df['Org Code'] == str(unique[dd])]
-            print("{} : {}".format(unique[dd], df_repeat.index.values+2))
-        raise ValueError
+            print("   {} : {}".format(unique[dd], df_repeat.index.values+2))
+        check += 1
+
+    # Check that a valid Org Code is available when something is provided
+    # in Departments field
+    dept = df['Departments/Colleges/Labs/Centers']
+    bad_idx = dept.notna() & df['Org Code'].isna()
+    bad_dept = dept.loc[bad_idx]
+    n_bad = bad_dept.size
+    if n_bad == 0:
+        print("PASS: No bad entries in Column E!")
     else:
-        print("PASS: No duplicate entries found!")
+        print("MAJOR: Entry in Column E is incorrect, N={}!".format(n_bad))
+        print("MAJOR: Please manually fix spreadsheet before proceeding!")
+        print("MAJOR: Bad entries below:")
+        print("MAJOR: Department : [Spreadsheet Index]")
+        for bb in bad_dept.index:
+            print("   {} : {}".format(dept.loc[bb], bb))
+        check += 1
+
+    if check != 0:
+        raise ValueError
 
 
 def create_csv(url, outfile):
