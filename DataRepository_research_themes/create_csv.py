@@ -7,6 +7,14 @@ co_filename = __file__
 co_dir = path.dirname(co_filename)
 
 
+# class TableError(Exception):
+#    """Base class for table exceptions"""
+#    pass
+#
+#    # def __init__(self, message):
+#    #       self.message = "pass
+
+
 def no_org_code_index(df):
     """
     Purpose:
@@ -74,6 +82,10 @@ def inspect_csv(df):
         for dd in dup:
             df_repeat = df.loc[df['Org Code'] == str(unique[dd])]
             print("{} : {}".format(unique[dd], df_repeat.index.values+2))
+        raise ValueError
+    else:
+        print("PASS: No duplicate entries found!")
+
 
 def create_csv(url, outfile):
     """
@@ -98,7 +110,12 @@ def create_csv(url, outfile):
         print("Please check your internet connection !")
         return
 
-    inspect_csv(df)
+    try:
+        inspect_csv(df)
+    except ValueError:
+        print("ERROR: Table is not correctly formatted!")
+        print("ERROR: Check the logs for explanations")
+        return
 
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)
