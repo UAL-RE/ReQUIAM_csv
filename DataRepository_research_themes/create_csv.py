@@ -9,13 +9,6 @@ from .commons import no_org_code_index
 co_filename = __file__
 co_dir = path.dirname(co_filename)
 
-# class TableError(Exception):
-#    """Base class for table exceptions"""
-#    pass
-#
-#    # def __init__(self, message):
-#    #       self.message = "pass
-
 
 def create_csv(url, outfile):
     """
