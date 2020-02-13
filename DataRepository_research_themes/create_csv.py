@@ -6,6 +6,8 @@ from urllib.error import URLError
 co_filename = __file__
 co_dir = path.dirname(co_filename)
 
+# Index offset needed between pandas df and Google sheet
+off = 2
 
 # class TableError(Exception):
 #    """Base class for table exceptions"""
@@ -85,7 +87,7 @@ def inspect_csv(df):
         dup = np.where(unique_counts > 1)[0]
         for dd in dup:
             df_repeat = df.loc[df['Org Code'] == str(unique[dd])]
-            print("   {} : {}".format(unique[dd], df_repeat.index.values+2))
+            print("   {} : {}".format(unique[dd], df_repeat.index.values+off))
         check += 1
 
     # Check that a valid Org Code is available when something is provided
@@ -102,7 +104,7 @@ def inspect_csv(df):
         print("MAJOR: Bad entries below:")
         print("MAJOR: Department : [Spreadsheet Index]")
         for bb in bad_dept.index:
-            print("   {} : {}".format(dept.loc[bb], bb+2))
+            print("   {} : {}".format(dept.loc[bb], bb + off))
         check += 1
 
     # Check that a valid Research Themes is available when Sub-portal is
@@ -123,7 +125,7 @@ def inspect_csv(df):
         print("MAJOR: Bad entries below:")
         print("MAJOR: Portal : [Spreadsheet Index]")
         for bb in bad_theme.index:
-            print("   {} : {}".format(sub_portal[bb], bb+2))
+            print("   {} : {}".format(sub_portal[bb], bb + off))
         check += 1
 
     if bad_portal.size == 0:
@@ -134,7 +136,7 @@ def inspect_csv(df):
         print("MAJOR: Bad entries below:")
         print("MAJOR: Theme : [Spreadsheet Index]")
         for bb in bad_portal.index:
-            print("   {} : {}".format(rsh_theme[bb], bb+2))
+            print("   {} : {}".format(rsh_theme[bb], bb + off))
         check += 1
 
     if check != 0:
