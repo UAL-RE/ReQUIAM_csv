@@ -38,8 +38,8 @@ def inspect_csv(df):
       final CSV file.
 
       Minor issues include:
-       - Entries without an 'Org Code' (excluded in final export)
-       - TBD
+       - Entries without an 'Org Code' (i.e., empty rows). Minor because
+         it is excluded in final export
 
       Major issues include:
        - Duplicate entries based on Org Code
@@ -103,6 +103,38 @@ def inspect_csv(df):
         print("MAJOR: Department : [Spreadsheet Index]")
         for bb in bad_dept.index:
             print("   {} : {}".format(dept.loc[bb], bb))
+        check += 1
+
+    # Check that a valid Research Themes is available when Sub-portal is
+    # provided and vice versa:
+    rsh_theme  = df['Research Themes']
+    sub_portal = df['Sub-portals']
+    bad_theme_idx  = sub_portal.notna() & rsh_theme.isna()
+    bad_portal_idx = rsh_theme.notna() & sub_portal.isna()
+
+    bad_theme  = rsh_theme.loc[bad_theme_idx]
+    bad_portal = rsh_theme.loc[bad_portal_idx]
+
+    if bad_theme.size == 0:
+        print("PASS: No bad entries in Column C!")
+    else:
+        print("MAJOR: Entry in Column C is unavailable, N={}!".format(bad_theme.size))
+        print("MAJOR: Please manually fix spreadsheet before proceeding!")
+        print("MAJOR: Bad entries below:")
+        print("MAJOR: Portal : [Spreadsheet Index]")
+        for bb in bad_theme.index:
+            print("   {} : {}".format(sub_portal[bb], bb+2))
+        check += 1
+
+    if bad_portal.size == 0:
+        print("PASS: No bad entries in Column D!")
+    else:
+        print("MAJOR: Entry in Column D is unavailable, N={}!".format(bad_portal.size))
+        print("MAJOR: Please manually fix spreadsheet before proceeding!")
+        print("MAJOR: Bad entries below:")
+        print("MAJOR: Theme : [Spreadsheet Index]")
+        for bb in bad_portal.index:
+            print("   {} : {}".format(rsh_theme[bb], bb+2))
         check += 1
 
     if check != 0:
