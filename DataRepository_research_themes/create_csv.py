@@ -27,7 +27,8 @@ def no_org_code_index(df):
     :return no_org_code: numpy array containing elements
     """
 
-    no_org_code = np.where(df['Org Code'].isna().values)[0]
+    no_org_code = np.where(df['Org Code'].isna() &
+                           df['Overall Themes'].isna())[0]
 
     return no_org_code
 
