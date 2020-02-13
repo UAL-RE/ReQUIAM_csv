@@ -102,7 +102,7 @@ def inspect_csv(df):
         print("MAJOR: Bad entries below:")
         print("MAJOR: Department : [Spreadsheet Index]")
         for bb in bad_dept.index:
-            print("   {} : {}".format(dept.loc[bb], bb))
+            print("   {} : {}".format(dept.loc[bb], bb+2))
         check += 1
 
     # Check that a valid Research Themes is available when Sub-portal is
