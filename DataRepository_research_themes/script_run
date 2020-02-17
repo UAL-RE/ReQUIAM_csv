@@ -1,0 +1,19 @@
+#!/user/bin/env python
+
+from os import path
+import configparser
+from .create_csv import create_csv
+
+co_filename = __file__
+co_dir = path.dirname(co_filename)
+
+
+if __name__ == '__main__':
+
+    config = configparser.ConfigParser()
+    config.read(path.join(co_dir, 'default.ini'))
+
+    url = config.get('global', 'url')
+    outfile = config.get('global', 'outfile')
+    create_csv(url, outfile)
+
