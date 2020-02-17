@@ -13,5 +13,5 @@ setup(
     author_email='astro.chun@gmail.com',
     description='Construct list of research themes and organization mapping to work with figshare patron management',
     long_description=long_description,
-    long_description_content_type='text/markdown'    
+    long_description_content_type='text/markdown'
 )
