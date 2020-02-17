@@ -2,7 +2,7 @@
 
 from os import path
 import configparser
-from .create_csv import create_csv
+from DataRepository_research_themes.create_csv import create_csv
 
 co_filename = __file__
 co_dir = path.dirname(co_filename)
