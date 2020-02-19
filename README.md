@@ -5,6 +5,15 @@ organization code to work with our
 [Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
 This code will generate a CSV file that is used for automation.
 
+- [Getting Started](#getting-started)
+    - [Requirements](#requirements)
+    - [Installation Instructions](#installation-instructions)
+    - [Testing Installation](#testing-installation)
+- [Execution](#execution)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
+
 --------------
 
 ## Getting Started
@@ -60,7 +69,7 @@ $ conda list datarepository-research-themes
 You should see that the version is `0.5.0`.
 
 
-### Running the tests
+### Testing Installation
 
 Will fill in later.
 
