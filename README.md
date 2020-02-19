@@ -11,7 +11,7 @@ These instructions will have the code running on your local or virtual machine.
 
 ### Prerequisites
 
-You will need the following:
+You will need the following. See [installation](#installation) steps:
 1. Python (3.7.5)
 2. [`numpy`](https://numpy.org/doc/) ([1.18.0](https://numpy.org/doc/1.18/))
 3. [`pandas`](https://pandas.pydata.org/) ([0.25.3](https://pandas.pydata.org/pandas-docs/version/0.25.3/))
