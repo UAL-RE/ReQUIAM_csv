@@ -1,10 +1,6 @@
 # DataRepository_research_themes
 
-Constructs a mapping list between research themes ("portals") and EDS/LDAP
-organization code to work with our
-[Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
-This code will generate a CSV file that is used for automation.
-
+- [Overview](#overview)
 - [Getting Started](#getting-started)
     - [Requirements](#requirements)
     - [Installation Instructions](#installation-instructions)
@@ -15,6 +11,14 @@ This code will generate a CSV file that is used for automation.
 - [License](#license)
 
 --------------
+
+## Overview
+
+Constructs a mapping list between research themes ("portals") and EDS/LDAP
+organization code to work with our
+[Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
+This code will generate a CSV file that is used for automation.
+
 
 ## Getting Started
 
