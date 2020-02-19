@@ -48,7 +48,7 @@ You can confirm installation via `conda list`
 $ conda list datarepository-research-themes
 ```
 
-You should see that the version is `0.4.0`
+You should see that the version is `0.4.0`.
 
 
 ### Running the tests
@@ -70,7 +70,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* Chun Ly - [University of Arizona Libraries, Office of Digital Innovation and Stewardship](https://github.com/UAL-ODIS)
+* [Chun Ly](http://www.github.com/astrochun) - [University of Arizona Libraries](https://github.com/ualibraries), [Office of Digital Innovation and Stewardship](https://github.com/UAL-ODIS)
 
 See also the list of
 [contributors](https://github.com/ualibraries/DataRepository_research_themes/contributors) who participated in this project.
@@ -78,4 +78,4 @@ See also the list of
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
