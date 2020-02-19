@@ -1,5 +1,8 @@
 # DataRepository_research_themes
-Construct list of research themes and organization mapping to work with figshare patron management
+Constructs a mapping list between research themes ("portals") and EDS/LDAP
+organization code to work with our
+[Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
+This code will generate a CSV file that is used for automation.
 
 ## Getting Started
 
