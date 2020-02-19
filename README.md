@@ -48,7 +48,7 @@ You can confirm installation via `conda list`
 $ conda list datarepository-research-themes
 ```
 
-You should see that the version is `0.4.0`.
+You should see that the version is `0.5.0`.
 
 
 ### Running the tests
