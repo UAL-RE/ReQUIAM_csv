@@ -10,7 +10,7 @@ These instructions will have the code running on your local or virtual machine.
 
 The following will be needed
 1. python (3.7.5)
-2. [`numpy`](https://numpy.org/doc/) ([1.18.0]((https://numpy.org/doc/1.18/)))
+2. [`numpy`](https://numpy.org/doc/) ([1.18.0](https://numpy.org/doc/1.18/))
 3. [`pandas`](https://pandas.pydata.org/) ([0.25.3](https://pandas.pydata.org/pandas-docs/version/0.25.3/))
 
 First, you would need to have a working version of Python (v3.7.5).  We recommend using the
