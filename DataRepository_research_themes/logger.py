@@ -2,7 +2,7 @@ import sys
 from os.path import join
 
 import logging
-formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s', "%H:%M:%S")
 
 
 class LogClass:
