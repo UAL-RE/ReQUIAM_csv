@@ -6,6 +6,17 @@ formatter = logging.Formatter('%(levelname)s: %(message)s')
 
 
 class LogClass:
+    """
+    Purpose:
+      Main class to log information to stdout and ASCII logfile
+
+    To use:
+    log = LogClass(log_dir, logfile).get_logger()
+
+    Parameters:
+      log_dir: Relative path for exported logfile directory
+      logfile: Filename for exported log file
+    """
 
     def __init__(self, log_dir, logfile):
         self.LOG_FILENAME = join(log_dir, logfile)
