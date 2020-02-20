@@ -15,4 +15,4 @@ if __name__ == '__main__':
 
     url = config.get('global', 'url')
     outfile = config.get('global', 'outfile')
-    create_csv(url, outfile)
+    create_csv(url, outfile, '')
