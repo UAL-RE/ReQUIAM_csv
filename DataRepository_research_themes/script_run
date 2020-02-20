@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     url = config.get('global', 'url')
     outfile = config.get('global', 'outfile')
-    log_dir = path.join(co_dir, config.get('global', 'log_dir'))
+    log_dir = config.get('global', 'log_dir')
     logfile = config.get('global', 'logfile')
 
     create_csv(url, outfile, log_dir, logfile)

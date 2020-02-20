@@ -9,9 +9,8 @@ class LogClass:
 
     def __init__(self, log_dir, logfile):
         self.LOG_FILENAME = join(log_dir, logfile)
-        self._log = self._get_logger()
 
-    def _get_logger(self):
+    def get_logger(self):
         log_level = logging.INFO
         log = logging.getLogger(self.LOG_FILENAME)
         if not getattr(log, 'handler_set', None):
