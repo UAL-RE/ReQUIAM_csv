@@ -42,8 +42,8 @@ def create_csv(url, outfile, log_dir, logfile):
     try:
         inspect_csv(df, log)
     except ValueError:
-        log.warning("ERROR: Table is not correctly formatted!")
-        log.warning("ERROR: Check the logs for explanations")
+        log.warning("Table is not correctly formatted!")
+        log.warning("Check the logs for explanations")
         return
 
     # This will be the working copy that will be produced
