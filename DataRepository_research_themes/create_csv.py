@@ -25,6 +25,8 @@ def create_csv(url, outfile, log_dir, logfile):
 
     :param url: Full url to CSV
     :param outfile: Exported file in CSV format
+    :param log_dir: Absolute path for exported logfile directory
+    :param logfile: File name for exported log file
     """
 
     log = LogClass(log_dir, logfile)._get_logger()

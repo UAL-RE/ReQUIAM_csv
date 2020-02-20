@@ -25,7 +25,7 @@ def inspect_csv(df, log):
        - TBD
 
     :param df: pandas dataframe
-
+    :param log: A LogClass()._get_logger() object
     :return:
     """
 
