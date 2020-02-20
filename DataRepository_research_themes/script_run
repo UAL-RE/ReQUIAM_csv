@@ -1,6 +1,8 @@
 #!/user/bin/env python
 
 from os import path
+from os import mkdir
+
 import configparser
 from DataRepository_research_themes.create_csv import create_csv
 
@@ -16,6 +18,8 @@ if __name__ == '__main__':
     url = config.get('global', 'url')
     outfile = config.get('global', 'outfile')
     log_dir = config.get('global', 'log_dir')
+    if not path.exists(log_dir):
+        mkdir(log_dir)
     logfile = config.get('global', 'logfile')
 
     create_csv(url, outfile, log_dir, logfile)
