@@ -70,7 +70,7 @@ You can confirm installation via `conda list`
 $ conda list datarepository-research-themes
 ```
 
-You should see that the version is `0.5.0`.
+You should see that the version is `0.6.0`.
 
 
 ### Testing Installation

@@ -6,11 +6,14 @@ from urllib.error import URLError
 from .inspect_csv import inspect_csv
 from .commons import no_org_code_index
 
+from .logger import LogClass
+
 co_filename = __file__
 co_dir = path.dirname(co_filename)
 
+from datetime import datetime as dt
 
-def create_csv(url, outfile):
+def create_csv(url, outfile, log_dir, logfile):
     """
     Purpose:
       This code generates a list of organization codes and associated
@@ -23,21 +26,27 @@ def create_csv(url, outfile):
 
     :param url: Full url to CSV
     :param outfile: Exported file in CSV format
+    :param log_dir: Relative path for exported logfile directory
+    :param logfile: File name for exported log file
     """
+
+    t_start = dt.now()
+
+    log = LogClass(log_dir, logfile).get_logger()
 
     # Read in URL that is of CSV format or CSV-exported (e.g., Google Sheets)
     try:
         df = pd.read_csv(url)
     except URLError:
-        print("Unable to retrieve data from URL !")
-        print("Please check your internet connection !")
+        log.warning("Unable to retrieve data from URL !")
+        log.warning("Please check your internet connection !")
         return
 
     try:
-        inspect_csv(df)
+        inspect_csv(df, log)
     except ValueError:
-        print("ERROR: Table is not correctly formatted!")
-        print("ERROR: Check the logs for explanations")
+        log.warning("Table is not correctly formatted!")
+        log.warning("Check the logs for explanations")
         return
 
     # This will be the working copy that will be produced
@@ -62,7 +71,7 @@ def create_csv(url, outfile):
 
     # Identify portal for each university organization
     for i in range(len(overall_theme)):
-        print("# Working on {}".format(overall_theme[i]))
+        log.info("# Working on {}".format(overall_theme[i]))
 
         if i != len(overall_theme)-1:
             sub_index = np.arange(overall_theme_index[i]+1,
@@ -97,3 +106,13 @@ def create_csv(url, outfile):
 
     # Write file.  File is placed within the git repository
     df_new.to_csv(path.join(co_dir, outfile), index=False)
+
+    t_stop = dt.now()
+
+    delta = t_stop - t_start
+    sec = delta.seconds
+    HH = sec // 3600
+    MM = (sec // 60) - (HH * 60)
+    SS = sec - (HH * 3600) - (MM * 60)
+    t_format = "Total time: {} hours  {} minutes  {} seconds".format(HH, MM, SS)
+    log.info(t_format)
