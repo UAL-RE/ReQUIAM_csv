@@ -7,8 +7,8 @@ formatter = logging.Formatter('%(levelname)s: %(message)s')
 
 class LogClass:
 
-    def __init__(self, logdir, logfile):
-        self.LOG_FILENAME = join(logdir, logfile)
+    def __init__(self, log_dir, logfile):
+        self.LOG_FILENAME = join(log_dir, logfile)
         self._log = self._get_logger()
 
     def _get_logger(self):
@@ -28,4 +28,3 @@ class LogClass:
             log.setLevel(log_level)
             log.handler_set = True
         return log
-

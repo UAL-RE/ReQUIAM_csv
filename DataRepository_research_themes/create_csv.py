@@ -12,7 +12,7 @@ co_filename = __file__
 co_dir = path.dirname(co_filename)
 
 
-def create_csv(url, outfile, logdir, logfile):
+def create_csv(url, outfile, log_dir, logfile):
     """
     Purpose:
       This code generates a list of organization codes and associated
@@ -27,7 +27,7 @@ def create_csv(url, outfile, logdir, logfile):
     :param outfile: Exported file in CSV format
     """
 
-    log = LogClass(logdir, logfile)._get_logger()
+    log = LogClass(log_dir, logfile)._get_logger()
 
     # Read in URL that is of CSV format or CSV-exported (e.g., Google Sheets)
     try:
