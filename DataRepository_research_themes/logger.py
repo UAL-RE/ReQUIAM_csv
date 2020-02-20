@@ -7,8 +7,8 @@ formatter = logging.Formatter('%(levelname)s: %(message)s')
 
 class LogClass:
 
-    def __init__(self, logdir):
-        self.LOG_FILENAME = join(logdir, 'inspect_csv.log')
+    def __init__(self, logdir, logfile):
+        self.LOG_FILENAME = join(logdir, logfile)
         self._log = self._get_logger()
 
     def _get_logger(self):
