@@ -1,8 +1,14 @@
 #!/user/bin/env python
 
 from os import path
+from os import mkdir
+
+from datetime import date
+
 import configparser
 from DataRepository_research_themes.create_csv import create_csv
+
+today = date.today()
 
 co_filename = __file__
 co_dir = path.dirname(co_filename)
@@ -15,4 +21,9 @@ if __name__ == '__main__':
 
     url = config.get('global', 'url')
     outfile = config.get('global', 'outfile')
-    create_csv(url, outfile)
+    log_dir = config.get('global', 'log_dir')
+    if not path.exists(log_dir):
+        mkdir(log_dir)
+    logfile_prefix = config.get('global', 'logfile_prefix')
+    logfile = "{}.{}.log".format(logfile_prefix, today.strftime("%Y-%m-%d"))
+    create_csv(url, outfile, log_dir, logfile)
