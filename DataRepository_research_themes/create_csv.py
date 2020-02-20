@@ -6,11 +6,13 @@ from urllib.error import URLError
 from .inspect_csv import inspect_csv
 from .commons import no_org_code_index
 
+from .logger import LogClass
+
 co_filename = __file__
 co_dir = path.dirname(co_filename)
 
 
-def create_csv(url, outfile):
+def create_csv(url, outfile, logdir):
     """
     Purpose:
       This code generates a list of organization codes and associated
@@ -25,19 +27,21 @@ def create_csv(url, outfile):
     :param outfile: Exported file in CSV format
     """
 
+    log = LogClass(logdir)._get_logger()
+
     # Read in URL that is of CSV format or CSV-exported (e.g., Google Sheets)
     try:
         df = pd.read_csv(url)
     except URLError:
-        print("Unable to retrieve data from URL !")
-        print("Please check your internet connection !")
+        log.warning("Unable to retrieve data from URL !")
+        log.warning("Please check your internet connection !")
         return
 
     try:
         inspect_csv(df)
     except ValueError:
-        print("ERROR: Table is not correctly formatted!")
-        print("ERROR: Check the logs for explanations")
+        log.warning("ERROR: Table is not correctly formatted!")
+        log.warning("ERROR: Check the logs for explanations")
         return
 
     # This will be the working copy that will be produced
@@ -62,7 +66,7 @@ def create_csv(url, outfile):
 
     # Identify portal for each university organization
     for i in range(len(overall_theme)):
-        print("# Working on {}".format(overall_theme[i]))
+        log.info("# Working on {}".format(overall_theme[i]))
 
         if i != len(overall_theme)-1:
             sub_index = np.arange(overall_theme_index[i]+1,
