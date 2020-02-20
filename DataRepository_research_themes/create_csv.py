@@ -11,6 +11,7 @@ from .logger import LogClass
 co_filename = __file__
 co_dir = path.dirname(co_filename)
 
+from datetime import datetime as dt
 
 def create_csv(url, outfile, log_dir, logfile):
     """
@@ -28,6 +29,8 @@ def create_csv(url, outfile, log_dir, logfile):
     :param log_dir: Relative path for exported logfile directory
     :param logfile: File name for exported log file
     """
+
+    t_start = dt.now()
 
     log = LogClass(log_dir, logfile).get_logger()
 
@@ -103,3 +106,13 @@ def create_csv(url, outfile, log_dir, logfile):
 
     # Write file.  File is placed within the git repository
     df_new.to_csv(path.join(co_dir, outfile), index=False)
+
+    t_stop = dt.now()
+
+    delta = t_stop - t_start
+    sec = delta.seconds
+    HH = sec // 3600
+    MM = (sec // 60) - (HH * 60)
+    SS = sec - (HH * 3600) - (MM * 60)
+    t_format = "Total time: {} hours  {} minutes  {} seconds".format(HH, MM, SS)
+    log.info(t_format)
