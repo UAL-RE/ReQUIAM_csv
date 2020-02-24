@@ -9,6 +9,7 @@ import configparser
 import argparse
 
 from DataRepository_research_themes.create_csv import create_csv
+from logger import LogClass
 
 today = date.today()
 
@@ -23,15 +24,25 @@ if __name__ == '__main__':
     parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"', action='store_true')
     args = parser.parse_args()
 
-    if args.execute:
-        print("Full run execution")
-    else:
-        print("Dry run execution")
-
     config = configparser.ConfigParser()
     config.read(path.join(co_dir, 'default.ini'))
 
-    url = config.get('global', 'url')  # Get URL for Google Sheets
+    # Logfile info
+    log_dir = config.get('global', 'log_dir')
+    if not path.exists(log_dir):
+        mkdir(log_dir)
+    logfile_prefix = config.get('global', 'logfile_prefix')
+    logfile = "{}.{}.log".format(logfile_prefix, today.strftime("%Y-%m-%d"))
+
+    log = LogClass(log_dir, logfile).get_logger()
+
+    if args.execute:
+        log.info("Full run execution")
+    else:
+        log.info("Dry run execution")
+
+    # Get URL for Google Sheets
+    url = config.get('global', 'url')
 
     # Set output filename
     outfile_dir  = config.get('global', 'outfile_dir')
@@ -43,12 +54,5 @@ if __name__ == '__main__':
         outfile = path.join(outfile_dir, config.get('global', 'outfile'))
     else:
         outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
-
-    # Logfile info
-    log_dir = config.get('global', 'log_dir')
-    if not path.exists(log_dir):
-        mkdir(log_dir)
-    logfile_prefix = config.get('global', 'logfile_prefix')
-    logfile = "{}.{}.log".format(logfile_prefix, today.strftime("%Y-%m-%d"))
 
     create_csv(url, outfile, log_dir, logfile)
