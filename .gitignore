@@ -1,5 +1,6 @@
 # log_dir path
 logs/
+dry_run.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
