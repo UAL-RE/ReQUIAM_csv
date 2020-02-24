@@ -6,6 +6,7 @@
     - [Installation Instructions](#installation-instructions)
     - [Testing Installation](#testing-installation)
 - [Execution](#execution)
+    - [Workflow](#workflow)
 - [Versioning](#versioning)
 - [Authors](#authors)
 - [License](#license)
@@ -51,15 +52,15 @@ $ conda activate rsh_themes
 Next, clone this repository into a parent folder:
 
 ```
-$ cd /path/to/parent/folder
-$ git clone https://github.com/ualibraries/DataRepository_research_themes.git
+(rsh_themes) $ cd /path/to/parent/folder
+(rsh_themes) $ git clone https://github.com/ualibraries/DataRepository_research_themes.git
 ```
 
 With the activated `conda` environment, you can install with the `setup.py` script:
 
 ```
 (rsh_themes) $ cd /path/to/parent/folder/DataRepository_research_themes
-(rsh_themes) $ python setup.py develop
+(rsh_themes) $ (sudo) python setup.py develop
 ```
 
 This will automatically installed the required `numpy` and `pandas` packages.
@@ -67,23 +68,39 @@ This will automatically installed the required `numpy` and `pandas` packages.
 You can confirm installation via `conda list`
 
 ```
-$ conda list datarepository-research-themes
+(rsh_themes) $ conda list datarepository-research-themes
 ```
 
-You should see that the version is `0.6.0`.
+You should see that the version is `0.7.0`.
 
 
 ### Testing Installation
 
-Will fill in later.
+To test the installation and create a temporary CSV file that does not affect
+the main CSV file, the following command will run and generate a file called
+`dry_run.csv`:
+
+```
+(rsh_themes) $ python DataRepository_research_themes/script_run
+```
 
 
 ## Execution
 
-To execute the script
+By default, the script does a "dry run."  To execute the script and override
+the main CSV file (data/research_themes.csv), include the `execute` argument
+
 ```
-$ python DataRepository_research_themes/script_run
+(rsh_themes) $ python DataRepository_research_themes/script_run --execute
 ```
+
+
+### Workflow
+The recommended workflow to commit changes on the main CSV file is as follows:
+ 1. Conduct a dry run execution
+ 2. Compare the two CSV files: 'data/research_themes.csv' and 'data/dry_run.csv'
+ 3. If the changes are what you expect, conduct the full execution
+ 4. Perform a `git add` and `git commit` for 'data/research_themes.csv'
 
 
 ## Versioning
