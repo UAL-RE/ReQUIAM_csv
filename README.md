@@ -60,7 +60,7 @@ With the activated `conda` environment, you can install with the `setup.py` scri
 
 ```
 (rsh_themes) $ cd /path/to/parent/folder/DataRepository_research_themes
-(rsh_themes) $ python setup.py develop
+(rsh_themes) $ (sudo) python setup.py develop
 ```
 
 This will automatically installed the required `numpy` and `pandas` packages.
