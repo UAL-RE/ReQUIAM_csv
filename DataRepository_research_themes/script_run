@@ -20,13 +20,13 @@ if __name__ == '__main__':
 
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Command-line driver for research themes management.')
-    parser.add_argument('--dry_run', help='Boolean flag to force dry run', action='store_true')
+    parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"', action='store_true')
     args = parser.parse_args()
 
-    if args.dry_run:
-        print("Dry run execution")
-    else:
+    if args.execute:
         print("Full run execution")
+    else:
+        print("Dry run execution")
 
     config = configparser.ConfigParser()
     config.read(path.join(co_dir, 'default.ini'))
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     url = config.get('global', 'url')  # Get URL for Google Sheets
 
     # Set output filename
-    if not args.dry_run:
+    if args.execute:
         outfile = config.get('global', 'outfile')
     else:
         outfile = config.get('global', 'outfile_dryrun')
