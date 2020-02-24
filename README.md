@@ -51,8 +51,8 @@ $ conda activate rsh_themes
 Next, clone this repository into a parent folder:
 
 ```
-$ cd /path/to/parent/folder
-$ git clone https://github.com/ualibraries/DataRepository_research_themes.git
+(rsh_themes) $ cd /path/to/parent/folder
+(rsh_themes) $ git clone https://github.com/ualibraries/DataRepository_research_themes.git
 ```
 
 With the activated `conda` environment, you can install with the `setup.py` script:
@@ -67,7 +67,7 @@ This will automatically installed the required `numpy` and `pandas` packages.
 You can confirm installation via `conda list`
 
 ```
-$ conda list datarepository-research-themes
+(rsh_themes) $ conda list datarepository-research-themes
 ```
 
 You should see that the version is `0.6.0`.
