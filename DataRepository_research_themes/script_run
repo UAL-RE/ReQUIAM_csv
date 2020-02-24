@@ -6,6 +6,8 @@ from os import mkdir
 from datetime import date
 
 import configparser
+import argparse
+
 from DataRepository_research_themes.create_csv import create_csv
 
 today = date.today()
@@ -16,14 +18,32 @@ co_dir = path.dirname(co_filename)
 
 if __name__ == '__main__':
 
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Command-line driver for research themes management.')
+    parser.add_argument('--dry_run', help='Boolean flag to force dry run', action='store_true')
+    args = parser.parse_args()
+
+    if args.dry_run:
+        print("Dry run execution")
+    else:
+        print("Full run execution")
+
     config = configparser.ConfigParser()
     config.read(path.join(co_dir, 'default.ini'))
 
-    url = config.get('global', 'url')
-    outfile = config.get('global', 'outfile')
+    url = config.get('global', 'url')  # Get URL for Google Sheets
+
+    # Set output filename
+    if not args.dry_run:
+        outfile = config.get('global', 'outfile')
+    else:
+        outfile = config.get('global', 'outfile_dryrun')
+
+    # Logfile info
     log_dir = config.get('global', 'log_dir')
     if not path.exists(log_dir):
         mkdir(log_dir)
     logfile_prefix = config.get('global', 'logfile_prefix')
     logfile = "{}.{}.log".format(logfile_prefix, today.strftime("%Y-%m-%d"))
+
     create_csv(url, outfile, log_dir, logfile)
