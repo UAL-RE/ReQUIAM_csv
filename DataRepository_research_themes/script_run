@@ -21,13 +21,15 @@ if __name__ == '__main__':
 
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Command-line driver for research themes management.')
-    parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"', action='store_true')
+    parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"',
+                        action='store_true')
     args = parser.parse_args()
 
+    # Parse configuration from default.ini
     config = configparser.ConfigParser()
     config.read(path.join(co_dir, 'default.ini'))
 
-    # Logfile info
+    # Define logfile
     log_dir = config.get('global', 'log_dir')
     if not path.exists(log_dir):
         mkdir(log_dir)
@@ -44,7 +46,7 @@ if __name__ == '__main__':
     # Get URL for Google Sheets
     url = config.get('global', 'url')
 
-    # Set output filename
+    # Define output filename
     outfile_dir  = config.get('global', 'outfile_dir')
     outfile_dir0 = path.join(co_dir, outfile_dir)
     if not path.exists(outfile_dir0):
