@@ -4,6 +4,8 @@ logs/
 # Dry run files
 dry_run*
 
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
