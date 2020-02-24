@@ -38,6 +38,8 @@ if __name__ == '__main__':
 
     log = LogClass(log_dir, logfile).get_logger()
 
+    log.info("Started script_run")
+
     if args.execute:
         log.info("Full run execution")
     else:
@@ -58,3 +60,5 @@ if __name__ == '__main__':
         outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
 
     create_csv(url, outfile, log)
+
+    log.info("Completed script_run successfully!")
