@@ -8,7 +8,7 @@ from datetime import date
 import configparser
 import argparse
 
-from DataRepository_research_themes.create_csv import create_csv
+from .create_csv import create_csv
 from .logger import LogClass
 
 today = date.today()
