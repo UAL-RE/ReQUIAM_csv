@@ -88,7 +88,7 @@ def create_csv(url, outfile, log_dir, logfile):
         df_new['Research Themes'][na_index] = overall_theme[i]
 
     # Identify rows that do not contain an org code
-    no_org_code = no_org_code_index(df_new)
+    no_org_code = no_org_code_index(df)
 
     # Remove entries without org code. This ensures that the overall theme are ignored
     concat_rows = np.concatenate((overall_theme_index, no_org_code))
