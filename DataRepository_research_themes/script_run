@@ -9,7 +9,7 @@ import configparser
 import argparse
 
 from DataRepository_research_themes.create_csv import create_csv
-from logger import LogClass
+from .logger import LogClass
 
 today = date.today()
 
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     else:
         outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
 
-    create_csv(url, outfile, log_dir, logfile)
+    create_csv(url, outfile, log)
