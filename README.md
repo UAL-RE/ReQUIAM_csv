@@ -75,14 +75,21 @@ You should see that the version is `0.6.0`.
 
 ### Testing Installation
 
-Will fill in later.
+To test the installation and create a temporary CSV file that does not affect
+the main CSV file, the following command will run and generate a file called
+`dry_run.csv`:
 
+```
+(rsh_themes) $ python DataRepository_research_themes/script_run
+```
 
 ## Execution
 
-To execute the script
+By default, the script does a "dry run."  To execute the script and override
+the main CSV file (`data/research_themes.csv`), include the `execute` argument
+
 ```
-$ python DataRepository_research_themes/script_run
+(rsh_themes) $ python DataRepository_research_themes/script_run --execute
 ```
 
 
