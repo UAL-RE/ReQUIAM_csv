@@ -34,10 +34,15 @@ if __name__ == '__main__':
     url = config.get('global', 'url')  # Get URL for Google Sheets
 
     # Set output filename
+    outfile_dir  = config.get('global', 'outfile_dir')
+    outfile_dir0 = path.join(co_dir, outfile_dir)
+    if not path.exists(outfile_dir0):
+        mkdir(outfile_dir0)
+
     if args.execute:
-        outfile = config.get('global', 'outfile')
+        outfile = path.join(outfile_dir, config.get('global', 'outfile'))
     else:
-        outfile = config.get('global', 'outfile_dryrun')
+        outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
 
     # Logfile info
     log_dir = config.get('global', 'log_dir')
