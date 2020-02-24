@@ -8,8 +8,8 @@ from datetime import date
 import configparser
 import argparse
 
-from .create_csv import create_csv
-from .logger import LogClass
+from DataRepository_research_themes.create_csv import create_csv
+from DataRepository_research_themes.logger import LogClass
 
 today = date.today()
 
