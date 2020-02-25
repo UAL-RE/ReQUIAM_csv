@@ -37,7 +37,7 @@ def create_csv(url, outfile, log):
         log.warning("Unable to retrieve data from URL !")
         log.warning("Please check your internet connection !")
         log.warning("create_csv terminating !")
-        raise URLError
+        raise URLError("Unable to retrieve Google Sheet")
 
     try:
         inspect_csv(df, log)

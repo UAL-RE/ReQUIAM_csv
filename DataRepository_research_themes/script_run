@@ -65,9 +65,9 @@ if __name__ == '__main__':
         create_csv(url, outfile, log)
 
         log.info("Completed script_run successfully!")
-    #except URLError:
-    #    log.warning("URLError from create_csv !")
-    #    log.warning("script_run: purports to die of unnatural causes !")
+    except URLError:
+        log.warning("URLError from create_csv !")
+        log.warning("script_run: purports to die of unnatural causes !")
     except ValueError:
         log.warning("ValueError from create_csv !")
         log.warning("script_run: purports to die of unnatural causes !")
