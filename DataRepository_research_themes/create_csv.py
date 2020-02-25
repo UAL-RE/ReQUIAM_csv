@@ -6,14 +6,13 @@ from urllib.error import URLError
 from .inspect_csv import inspect_csv
 from .commons import no_org_code_index
 
-from .logger import LogClass
+from datetime import datetime as dt
 
 co_filename = __file__
 co_dir = path.dirname(co_filename)
 
-from datetime import datetime as dt
 
-def create_csv(url, outfile, log_dir, logfile):
+def create_csv(url, outfile, log):
     """
     Purpose:
       This code generates a list of organization codes and associated
@@ -26,13 +25,10 @@ def create_csv(url, outfile, log_dir, logfile):
 
     :param url: Full url to CSV
     :param outfile: Exported file in CSV format
-    :param log_dir: Relative path for exported logfile directory
-    :param logfile: File name for exported log file
+    :param log: LogClass.get_logger() object
     """
 
     t_start = dt.now()
-
-    log = LogClass(log_dir, logfile).get_logger()
 
     # Read in URL that is of CSV format or CSV-exported (e.g., Google Sheets)
     try:
@@ -40,14 +36,16 @@ def create_csv(url, outfile, log_dir, logfile):
     except URLError:
         log.warning("Unable to retrieve data from URL !")
         log.warning("Please check your internet connection !")
-        return
+        log.warning("create_csv terminating !")
+        raise URLError("Unable to retrieve Google Sheet")
 
     try:
         inspect_csv(df, log)
     except ValueError:
         log.warning("Table is not correctly formatted!")
         log.warning("Check the logs for explanations")
-        return
+        log.warning("create_csv terminating !")
+        raise ValueError
 
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)

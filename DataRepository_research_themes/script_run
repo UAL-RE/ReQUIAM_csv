@@ -3,12 +3,15 @@
 from os import path
 from os import mkdir
 
+from urllib.error import URLError
+
 from datetime import date
 
 import configparser
 import argparse
 
 from DataRepository_research_themes.create_csv import create_csv
+from DataRepository_research_themes.logger import LogClass
 
 today = date.today()
 
@@ -20,20 +23,34 @@ if __name__ == '__main__':
 
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Command-line driver for research themes management.')
-    parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"', action='store_true')
+    parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"',
+                        action='store_true')
     args = parser.parse_args()
 
-    if args.execute:
-        print("Full run execution")
-    else:
-        print("Dry run execution")
-
+    # Parse configuration from default.ini
     config = configparser.ConfigParser()
     config.read(path.join(co_dir, 'default.ini'))
 
-    url = config.get('global', 'url')  # Get URL for Google Sheets
+    # Define logfile
+    log_dir = config.get('global', 'log_dir')
+    if not path.exists(log_dir):
+        mkdir(log_dir)
+    logfile_prefix = config.get('global', 'logfile_prefix')
+    logfile = "{}.{}.log".format(logfile_prefix, today.strftime("%Y-%m-%d"))
 
-    # Set output filename
+    log = LogClass(log_dir, logfile).get_logger()
+
+    log.info("Started script_run")
+
+    if args.execute:
+        log.info("Full run execution")
+    else:
+        log.info("Dry run execution")
+
+    # Get URL for Google Sheets
+    url = config.get('global', 'url')
+
+    # Define output filename
     outfile_dir  = config.get('global', 'outfile_dir')
     outfile_dir0 = path.join(co_dir, outfile_dir)
     if not path.exists(outfile_dir0):
@@ -44,11 +61,15 @@ if __name__ == '__main__':
     else:
         outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
 
-    # Logfile info
-    log_dir = config.get('global', 'log_dir')
-    if not path.exists(log_dir):
-        mkdir(log_dir)
-    logfile_prefix = config.get('global', 'logfile_prefix')
-    logfile = "{}.{}.log".format(logfile_prefix, today.strftime("%Y-%m-%d"))
+    try:
+        create_csv(url, outfile, log)
 
-    create_csv(url, outfile, log_dir, logfile)
+        log.info("Completed script_run successfully!")
+    except URLError:
+        log.warning("URLError from create_csv !")
+        log.warning("script_run: purports to die of unnatural causes !")
+    except ValueError:
+        log.warning("ValueError from create_csv !")
+        log.warning("script_run: purports to die of unnatural causes !")
+
+
