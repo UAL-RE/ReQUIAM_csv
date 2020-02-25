@@ -3,6 +3,8 @@
 from os import path
 from os import mkdir
 
+from urllib.error import URLError
+
 from datetime import date
 
 import configparser
@@ -59,6 +61,15 @@ if __name__ == '__main__':
     else:
         outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
 
-    create_csv(url, outfile, log)
+    try:
+        create_csv(url, outfile, log)
 
-    log.info("Completed script_run successfully!")
+        log.info("Completed script_run successfully!")
+    #except URLError:
+    #    log.warning("URLError from create_csv !")
+    #    log.warning("script_run: purports to die of unnatural causes !")
+    except ValueError:
+        log.warning("ValueError from create_csv !")
+        log.warning("script_run: purports to die of unnatural causes !")
+
+

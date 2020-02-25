@@ -37,7 +37,7 @@ def create_csv(url, outfile, log):
         log.warning("Unable to retrieve data from URL !")
         log.warning("Please check your internet connection !")
         log.warning("create_csv terminating !")
-        return
+        raise URLError
 
     try:
         inspect_csv(df, log)
@@ -45,7 +45,7 @@ def create_csv(url, outfile, log):
         log.warning("Table is not correctly formatted!")
         log.warning("Check the logs for explanations")
         log.warning("create_csv terminating !")
-        return
+        raise ValueError
 
     # This will be the working copy that will be produced
     df_new = df.copy(deep=True)
