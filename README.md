@@ -71,7 +71,7 @@ You can confirm installation via `conda list`
 (rsh_themes) $ conda list datarepository-research-themes
 ```
 
-You should see that the version is `0.7.0`.
+You should see that the version is `0.8.0`.
 
 
 ### Testing Installation
