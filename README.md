@@ -20,7 +20,15 @@ organization code to work with our
 [Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
 This code will generate a CSV file that is used for automation.
 
-There will be two versions of the CSV file called `research_themes.csv`:
+The code imports a [Google Sheet](https://docs.google.com/spreadsheets/d/1f8tNxj96g_4NW6LWAIx8s3AxRoBbwRvFIxUXMAYyVlU/edit#gid=1301862342)
+that is maintained by the Data Repository Team. The advantages of using Google Docs are:
+ 1. Easy of use (no need to format CSV)
+ 2. Advanced spreadsheet capabilities with `VLOOKUP()`, permitting and prohibiting cells for modification
+ 3. Documentation capabilities
+ 4. Ability to grant access with University of Arizona Libraries staff for coordinated maintenance
+
+With the above Google Sheet that is imported as a CSV file using `pandas`, it generates
+a CSV file called `data/research_themes.csv`.  There are two versions of this file:
 - [stable](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/master/DataRepository_research_themes/data/research_themes.csv): Trusted version
 - [develop](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/develop/DataRepository_research_themes/data/research_themes.csv): Under development
 
