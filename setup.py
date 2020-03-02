@@ -8,7 +8,7 @@ with open("requirements.txt", "r") as fr:
 
 setup(
     name='DataRepository_research_themes',
-    version='0.8.0',
+    version='0.9.0',
     packages=find_packages('DataRepository_research_themes'),
     url='https://github.com/ualibraries/DataRepository_research_themes',
     license='MIT License',
