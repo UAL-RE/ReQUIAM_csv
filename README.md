@@ -115,11 +115,14 @@ the main CSV file (data/research_themes.csv), include the `execute` argument
 
 ### Workflow
 The recommended workflow to commit changes on the main CSV file is as follows:
- 1. Conduct a dry run execution
- 2. Compare the two CSV files: 'data/research_themes.csv' and 'data/dry_run.csv'
- 3. If the changes are what you expect, conduct the full execution
- 4. Perform a `git add` and `git commit` for 'data/research_themes.csv'
-
+ 1. First, switch to `develop` branch: `git checkout develop`
+ 2. Conduct a dry run execution
+ 3. Compare the two CSV files: 'data/research_themes.csv' and 'data/dry_run.csv'
+ 4. If the changes are what you expect, conduct the full execution
+ 5. Update the version number in 'README.md', '`__init__.py`', and 'setup.py'
+ 6. Perform a `git add` and `git commit` for 'data/research_themes.csv' and the above files to `develop`
+ 7. Create a pull request [here](https://github.com/ualibraries/DataRepository_research_themes/compare/develop?expand=1)
+ 8. Update your local git repository with `git pull --all`
 
 ## Versioning
 
