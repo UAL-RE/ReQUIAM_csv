@@ -27,10 +27,17 @@ that is maintained by the Data Repository Team. The advantages of using Google D
  3. Documentation capabilities via comments and version history management
  4. Ability to grant access to University of Arizona Libraries staff for coordinated maintenance
 
-With the above Google Sheet that is imported as a CSV file using `pandas`, it generates
-a CSV file called `data/research_themes.csv`.  There are two versions of this file:
+With the above Google Sheet that is imported as a CSV file using `pandas`, it
+generates a CSV file called `data/research_themes.csv`.  There are two versions
+of this file:
 - [stable](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/master/DataRepository_research_themes/data/research_themes.csv): Trusted version
 - [develop](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/develop/DataRepository_research_themes/data/research_themes.csv): Under development
+
+The [workflow](#workflow) describes how version control will be conducted with
+these two different branches. In general, after a maintainer implements a change
+to the Google Doc, s/he will perform an update to the `develop` branch. Once that
+has been reviewed and the content is good, a pull request will be done to merge
+into the `master` branch.
 
 ## Getting Started
 
