@@ -20,6 +20,24 @@ organization code to work with our
 [Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
 This code will generate a CSV file that is used for automation.
 
+The code imports a [Google Sheet](https://docs.google.com/spreadsheets/d/1f8tNxj96g_4NW6LWAIx8s3AxRoBbwRvFIxUXMAYyVlU/edit#gid=1301862342)
+that is maintained by the Data Repository Team. The advantages of using Google Docs/Sheets are:
+ 1. Easy of use (no need to format CSV)
+ 2. Advanced spreadsheet capabilities with `VLOOKUP()`, and permitting/prohibiting cells for modification
+ 3. Documentation capabilities via comments and version history management
+ 4. Ability to grant access to University of Arizona Libraries staff for coordinated maintenance
+
+With the above Google Sheet that is imported as a CSV file using `pandas`, it
+generates a CSV file called `data/research_themes.csv`.  There are two versions
+of this file:
+- [stable](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/master/DataRepository_research_themes/data/research_themes.csv): Trusted version
+- [develop](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/develop/DataRepository_research_themes/data/research_themes.csv): Under development
+
+The [workflow](#workflow) describes how version control will be conducted with
+these two different branches. In general, after a maintainer implements a
+change to the Google Sheet, s/he will perform an update to the `develop`
+branch. Once that has been reviewed, a pull request will be done to merge the
+changes into the `master` branch.
 
 ## Getting Started
 
@@ -28,7 +46,7 @@ These instructions will have the code running on your local or virtual machine.
 
 ### Requirements
 
-You will need the following to have a working copy of this software. See [installation](#installation) steps:
+You will need the following to have a working copy of this software. See [installation](#installation-instructions) steps:
 1. Python (3.7.5)
 2. [`numpy`](https://numpy.org/doc/) ([1.18.0](https://numpy.org/doc/1.18/))
 3. [`pandas`](https://pandas.pydata.org/) ([0.25.3](https://pandas.pydata.org/pandas-docs/version/0.25.3/))
@@ -71,7 +89,7 @@ You can confirm installation via `conda list`
 (rsh_themes) $ conda list datarepository-research-themes
 ```
 
-You should see that the version is `0.8.0`.
+You should see that the version is `0.9.0`.
 
 
 ### Testing Installation
@@ -97,11 +115,14 @@ the main CSV file (data/research_themes.csv), include the `execute` argument
 
 ### Workflow
 The recommended workflow to commit changes on the main CSV file is as follows:
- 1. Conduct a dry run execution
- 2. Compare the two CSV files: 'data/research_themes.csv' and 'data/dry_run.csv'
- 3. If the changes are what you expect, conduct the full execution
- 4. Perform a `git add` and `git commit` for 'data/research_themes.csv'
-
+ 1. First, switch to `develop` branch: `git checkout develop`
+ 2. Conduct a dry run execution
+ 3. Compare the two CSV files: 'data/research_themes.csv' and 'data/dry_run.csv'
+ 4. If the changes are what you expect, conduct the full execution
+ 5. Update the version number in README.md, `__init__.py`, and setup.py
+ 6. Perform a `git add` and `git commit` for 'data/research_themes.csv' and the above files to `develop`
+ 7. Create a pull request [here](https://github.com/ualibraries/DataRepository_research_themes/compare/develop?expand=1)
+ 8. Update your local git repository with `git pull --all`
 
 ## Versioning
 
