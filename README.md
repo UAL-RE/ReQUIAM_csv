@@ -21,7 +21,7 @@ organization code to work with our
 This code will generate a CSV file that is used for automation.
 
 The code imports a [Google Sheet](https://docs.google.com/spreadsheets/d/1f8tNxj96g_4NW6LWAIx8s3AxRoBbwRvFIxUXMAYyVlU/edit#gid=1301862342)
-that is maintained by the Data Repository Team. The advantages of using Google Docs are:
+that is maintained by the Data Repository Team. The advantages of using Google Docs/Sheets are:
  1. Easy of use (no need to format CSV)
  2. Advanced spreadsheet capabilities with `VLOOKUP()`, and permitting/prohibiting cells for modification
  3. Documentation capabilities via comments and version history management
@@ -34,10 +34,10 @@ of this file:
 - [develop](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/develop/DataRepository_research_themes/data/research_themes.csv): Under development
 
 The [workflow](#workflow) describes how version control will be conducted with
-these two different branches. In general, after a maintainer implements a change
-to the Google Doc, s/he will perform an update to the `develop` branch. Once that
-has been reviewed and the content is good, a pull request will be done to merge
-into the `master` branch.
+these two different branches. In general, after a maintainer implements a
+change to the Google Sheet, s/he will perform an update to the `develop`
+branch. Once that has been reviewed, a pull request will be done to merge the
+changes into the `master` branch.
 
 ## Getting Started
 
