@@ -12,6 +12,7 @@ import argparse
 
 from DataRepository_research_themes.create_csv import create_csv
 from DataRepository_research_themes.logger import LogClass
+from DataRepository_research_themes.commit import awk_message
 
 today = date.today()
 
@@ -65,6 +66,8 @@ if __name__ == '__main__':
         create_csv(url, outfile, log)
 
         log.info("Completed script_run successfully!")
+
+        awk_message(execute=args.execute)
     except URLError:
         log.warning("URLError from create_csv !")
         log.warning("script_run: purports to die of unnatural causes !")
