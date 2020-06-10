@@ -4,27 +4,303 @@ Org Code,Sub-portals,Research Themes,Departments/Colleges/Labs/Centers,Parent Or
 3503,arts_design,Arts & Design,School of Music,College of Fine Arts
 3509,arts_design,Arts & Design,Sch Theatre Film & Television,College of Fine Arts
 1004,arts_design,Arts & Design,School of Architecture,Col Arch Plan & Landscape Arch
+1005,arts_design,Arts & Design,Sch of Landscape Architecture,Col Arch Plan & Landscape Arch
+1003,arts_design,Arts & Design,Drachman Institute,Col Arch Plan & Landscape Arch
+3506,arts_design,Arts & Design,School of Theatre Arts,College of Fine Arts
+3507,arts_design,Arts & Design,School of Media Arts,College of Fine Arts
+1001,arts_design,Arts & Design,CAPLA Administration,Col Arch Plan & Landscape Arch
+3501,arts_design,Arts & Design,Fine Arts Administration,College of Fine Arts
+2D,arts_design,Arts & Design,2D,School of Art
+3D,arts_design,Arts & Design,3D,School of Art
+ARH,arts_design,Arts & Design,ART HISTORY,School of Art
+AVCE,arts_design,Arts & Design,ARTS AND VISUAL CULTURE EDUCATION,School of Art
+CERA,arts_design,Arts & Design,CERAMICS,School of Art
+CST,arts_design,Arts & Design,COSTUME,School of Art
+FNDN,arts_design,Arts & Design,FOUNDATIONS,School of Art
+GALY,arts_design,Arts & Design,GALLERIES,School of Art
+PHTO,arts_design,Arts & Design,PHOTOGRAPHY,School of Art
+PRNT,arts_design,Arts & Design,PRINTMAKING,School of Art
+PTDR,arts_design,Arts & Design,PAINTING AND DRAWING,School of Art
+SCLP,arts_design,Arts & Design,SCULPTURE,School of Art
+VISC,arts_design,Arts & Design,VISUAL COMMUNICATIONS,School of Art
+VRC,arts_design,Arts & Design,VISUAL RESOURCE CENTER,School of Art
+AJDS,arts_design,Arts & Design,AZ JASS DANCE SHOWCASE,School of Dance
+CNTS,arts_design,Arts & Design,SEASON CONCERTS,School of Dance
+GC,arts_design,Arts & Design,GRADUATE STUDENT CONCERT,School of Dance
+SEDT,arts_design,Arts & Design,STEVIE ELLER DANCE THEATRE,School of Dance
+ESTE,arts_design,Arts & Design,LARRY ESTES,School of Media Arts
+HARA,arts_design,Arts & Design,MB HARALOVICH,School of Media Arts
+JENK,arts_design,Arts & Design,JENNY JENKINS,School of Media Arts
+MAKI,arts_design,Arts & Design,YURI MAKINO,School of Media Arts
+MARP,arts_design,Arts & Design,MARPL,School of Media Arts
+MULC,arts_design,Arts & Design,MICHAEL MULCAHY,School of Media Arts
+OWCZ,arts_design,Arts & Design,KIM OWCZARSKI,School of Media Arts
+PETT,arts_design,Arts & Design,HOMER PETTEY,School of Media Arts
+RODD,arts_design,Arts & Design,PATRICK RODDY,School of Media Arts
+ROOM,arts_design,Arts & Design,DOT ROOME,School of Media Arts
+SECK,arts_design,Arts & Design,BEVERLY SECKINGER,School of Media Arts
+SELZ,arts_design,Arts & Design,BARBARA SELZNICK,School of Media Arts
+SKY,arts_design,Arts & Design,LISANNE SKYLER,School of Media Arts
+ADM,arts_design,Arts & Design,TAR ADMIN OFFICE,School of Theatre Arts
+LGT,arts_design,Arts & Design,LIGHTING,School of Theatre Arts
+MKT,arts_design,Arts & Design,MARKETING,School of Theatre Arts
+PNT,arts_design,Arts & Design,PAINT,School of Theatre Arts
+PRP,arts_design,Arts & Design,PROPS,School of Theatre Arts
+SCN,arts_design,Arts & Design,SCENE,School of Theatre Arts
+SND,arts_design,Arts & Design,SOUND,School of Theatre Arts
+STD,arts_design,Arts & Design,TAR STUDIES,School of Theatre Arts
+3001,business_econ,Business & Economics,Eller Administration,Eller College of Management
 BUSN,business_econ,Business & Economics,Eller College of Management,Academic Affairs Provost
 3009,business_econ,Business & Economics,Economics,Eller College of Management
+8304,business_econ,Business & Economics,Testing Office,Enrollment Services
+0118,business_econ,Business & Economics,Agric & Resource Econ-Ins,College of Agric and Life Sci
+2418,business_econ,Business & Economics,Agricultural Resource Econ-Res,College of Agric and Life Sci
+3002,business_econ,Business & Economics,School of Public Admin and Policy,Eller College of Management
+3003,business_econ,Business & Economics,Finance,Eller College of Management
+3004,business_econ,Business & Economics,Management and Organizations,Eller College of Management
+3005,business_econ,Business & Economics,Economic Business Research Ctr,Eller College of Management
+3006,business_econ,Business & Economics,Marketing,Eller College of Management
+3007,business_econ,Business & Economics,School of Accountancy,Eller College of Management
+3010,business_econ,Business & Economics,Management Information Systems,Eller College of Management
+3012,business_econ,Business & Economics,Karl Eller Grad School of Mgmt,Eller College of Management
+3013,business_econ,Business & Economics,Economic Science Laboratory,Eller College of Management
+3014,business_econ,Business & Economics,Ctr for Mgmt of Information,Eller College of Management
+3016,business_econ,Business & Economics,Eller Undergraduate Programs,Eller College of Management
 3204,education,Education,Disability Psychoeduc Studies,College of Education
 3221,education,Education,Educatnl Policy Studies Pract,College of Education
 3211,education,Education,Educational Psychology,College of Education
 3222,education,Education,Teachg Learning Sociocult Stds,College of Education
 3205,education,Education,Higher Education,College of Education
 3216,education,Education,Education Administration,College of Education
+1404,education,Education,PHYSICAL EDUCATION PROGRAM,College of Education
+3208,education,Education,Teaching Teacher Education,College of Education
+3212,education,Education,Language Reading and Culture,College of Education
+3201,education,Education,Education - Dean's Office,College of Education
 0429,humanities,Humanities,English,College of Social & Behav Sci
+0460,humanities,Humanities,Ctr Interpretation Test & Rsch,College of Humanities
+0467,humanities,Humanities,Sch of Intl Lang Lit & Culture,College of Humanities
+0472,humanities,Humanities,Public & Applied Humanities,College of Humanities
+0473,humanities,Humanities,Center for Buddhist Studies,College of Humanities
+0474,humanities,Humanities,Center for Digital Humanities,College of Humanities
+9303,humanities,Humanities,Ctr for Educ Rsch in Culture,College of Humanities
+0439,humanities,Humanities,East Asian Studies,College of Humanities
 0435,humanities,Humanities,Africana Studies,College of Humanities
 2506,humanities,Humanities,English as a Second Language,College of Humanities
-0439,humanities,Humanities,East Asian Studies,College of Humanities
 0440,humanities,Humanities,French and Italian,College of Humanities
 0424,humanities,Humanities,German Studies,College of Humanities
 0428,humanities,Humanities,Philosophy,College of Social & Behav Sci
-0472,humanities,Humanities,Public & Applied Humanities,College of Humanities
 0405,humanities,Humanities,Religious Studies and Classics,College of Humanities
 0409,humanities,Humanities,Russian and Slavic Studies,College of Humanities
 0456,humanities,Humanities,Second Language Acquisition Teaching,College of Humanities
 0441,humanities,Humanities,Spanish and Portuguese,College of Humanities
+0427,humanities,Humanities,Humanities Administration,College of Humanities
+0452,humanities,Humanities,Writing Skills Improvement,College of Humanities
+2505,humanities,Humanities,GUADALAJARA SUMMER SCHOOL,College of Humanities
+HMNT,humanities,Humanities,College of Humanities,Colleges of Letters Arts & Sci
 LAWC,law,Law,James E Rogers College of Law,Academic Affairs Provost
+3601,law,Law,Law Administration,James E Rogers College of Law
+3602,law,Law,Law Library,James E Rogers College of Law
+3603,law,Law,Law Instruction,James E Rogers College of Law
+3301,med_health,Medicine & Health,College of Nursing,College of Nursing
+3302,med_health,Medicine & Health,CON Accelerated Partnership Pg,College of Nursing
+0655,med_health,Medicine & Health,COM PHX Emergency Med Rsch Ctr,College of Medicine - Phoenix
+0660,med_health,Medicine & Health,COM Phx Basic Medical Sci,College of Medicine - Phoenix
+0662,med_health,Medicine & Health,COM Phx NanoBioscience & Med,College of Medicine - Phoenix
+0664,med_health,Medicine & Health,COM Phx Anesthesiology,College of Medicine - Phoenix
+0665,med_health,Medicine & Health,COM Phx Biomedical Informatics,College of Medicine - Phoenix
+0666,med_health,Medicine & Health,COM Phx Child Health,College of Medicine - Phoenix
+0667,med_health,Medicine & Health,COM Phx Emergency Medicine,College of Medicine - Phoenix
+0668,med_health,Medicine & Health,COM Phx Family Commun&Prev Med,College of Medicine - Phoenix
+0669,med_health,Medicine & Health,COM Phx Internal Medicine,College of Medicine - Phoenix
+0670,med_health,Medicine & Health,COM Phx Neurology,College of Medicine - Phoenix
+0671,med_health,Medicine & Health,COM Phx Obstetrics&Gynecology,College of Medicine - Phoenix
+0672,med_health,Medicine & Health,COM Phx Ophthalmology,College of Medicine - Phoenix
+0673,med_health,Medicine & Health,COM Phx Orthopedics,College of Medicine - Phoenix
+0674,med_health,Medicine & Health,COM Phx Psychiatry,College of Medicine - Phoenix
+0675,med_health,Medicine & Health,COM Phx Physical Med & Rehab,College of Medicine - Phoenix
+0676,med_health,Medicine & Health,COM Phx Radiology,College of Medicine - Phoenix
+0677,med_health,Medicine & Health,COM Phx Surgery,College of Medicine - Phoenix
+0678,med_health,Medicine & Health,COM Phx Neurosurgery,College of Medicine - Phoenix
+0679,med_health,Medicine & Health,COM Phx Urology,College of Medicine - Phoenix
+0680,med_health,Medicine & Health,COM Phx Pathology,College of Medicine - Phoenix
+0681,med_health,Medicine & Health,COM Phx Dermatology,College of Medicine - Phoenix
+0682,med_health,Medicine & Health,COM Phx Molecular Medicine,College of Medicine - Phoenix
+0683,med_health,Medicine & Health,COM Phx Radiation Oncology,College of Medicine - Phoenix
+0684,med_health,Medicine & Health,COM Phx Bioethics Med Humanism,College of Medicine - Phoenix
+0686,med_health,Medicine & Health,COM Phx Ctr Tox&Pharm Ed&Res,College of Medicine - Phoenix
+0687,med_health,Medicine & Health,COM Phx Translational Neurosci,College of Medicine - Phoenix
+0688,med_health,Medicine & Health,COM-Phx Interdisc Oncology,College of Medicine - Phoenix
+0659,med_health,Medicine & Health,COM Phx Campus Administration,College of Medicine - Phoenix
+1902,med_health,Medicine & Health,Pharmaceutical Sciences,College of Pharmacy
+1903,med_health,Medicine & Health,Pharmacology and Toxicology,College of Pharmacy
+1904,med_health,Medicine & Health,Center for Phytomedicine Rsch,College of Pharmacy
+1905,med_health,Medicine & Health,Pharmacy Practice and Science,College of Pharmacy
+1906,med_health,Medicine & Health,HOPE Center,College of Pharmacy
+1907,med_health,Medicine & Health,Center for Toxicology,College of Pharmacy
+1908,med_health,Medicine & Health,Poison Control Center,College of Pharmacy
+1901,med_health,Medicine & Health,Pharmacy Administration,College of Pharmacy
+0700,med_health,Medicine & Health,Otolaryngology,College of Medicine - Tucson
+0702,med_health,Medicine & Health,Surgery,College of Medicine - Tucson
+0703,med_health,Medicine & Health,Obstetrics and Gynecology,College of Medicine - Tucson
+0704,med_health,Medicine & Health,Family and Community Medicine,College of Medicine - Tucson
+0705,med_health,Medicine & Health,Physiology,College of Medicine - Tucson
+0707,med_health,Medicine & Health,Immunobiology,College of Medicine - Tucson
+0708,med_health,Medicine & Health,Chemistry & Biochemistry-Med,College of Medicine - Tucson
+0709,med_health,Medicine & Health,Pediatrics,College of Medicine - Tucson
+0710,med_health,Medicine & Health,Cellular & Molecular Medicine,College of Medicine - Tucson
+0711,med_health,Medicine & Health,Medical Imaging,College of Medicine - Tucson
+0712,med_health,Medicine & Health,Arizona Center on Aging,College of Medicine - Tucson
+0715,med_health,Medicine & Health,Anesthesiology,College of Medicine - Tucson
+0713,med_health,Medicine & Health,Medicine,College of Medicine - Tucson
+0716,med_health,Medicine & Health,Sarver Heart Center,College of Medicine - Tucson
+0717,med_health,Medicine & Health,Psychiatry,College of Medicine - Tucson
+0718,med_health,Medicine & Health,Neurology,College of Medicine - Tucson
+0719,med_health,Medicine & Health,Pharmacology,College of Medicine - Tucson
+0720,med_health,Medicine & Health,Pathology,College of Medicine - Tucson
+0724,med_health,Medicine & Health,Ophthalmology & Vision Science,College of Medicine - Tucson
+0729,med_health,Medicine & Health,Biomedical Communications,College of Medicine - Tucson
+0741,med_health,Medicine & Health,Radiation Oncology,College of Medicine - Tucson
+0744,med_health,Medicine & Health,Clinical Teaching,College of Medicine - Tucson
+0750,med_health,Medicine & Health,Dept of Emergency Medicine,College of Medicine - Tucson
+0752,med_health,Medicine & Health,Medical Student Research Prog,College of Medicine - Tucson
+0755,med_health,Medicine & Health,Physiology-Research,College of Medicine - Tucson
+0757,med_health,Medicine & Health,Immunobiology-Research,College of Medicine - Tucson
+0758,med_health,Medicine & Health,Chemistry & Biochemistry-Rsch,College of Medicine - Tucson
+0760,med_health,Medicine & Health,Cellular & Molecular Med-Rsch,College of Medicine - Tucson
+0763,med_health,Medicine & Health,Medicine-Research,College of Medicine - Tucson
+0768,med_health,Medicine & Health,Neurology-Research,College of Medicine - Tucson
+0769,med_health,Medicine & Health,Pharmacology-Research,College of Medicine - Tucson
+0771,med_health,Medicine & Health,Arthritis Center-Research,College of Medicine - Tucson
+0772,med_health,Medicine & Health,Children's Research Center,College of Medicine - Tucson
+0775,med_health,Medicine & Health,AZ Emergency Medicine Rsch Ctr,College of Medicine - Tucson
+0779,med_health,Medicine & Health,Liver Research Institute,College of Medicine - Tucson
+0784,med_health,Medicine & Health,Arizona Telemedicine Program,College of Medicine - Tucson
+0785,med_health,Medicine & Health,COM Clinical Rural Rotations,College of Medicine - Tucson
+0786,med_health,Medicine & Health,Orthopaedic Surgery,College of Medicine - Tucson
+0788,med_health,Medicine & Health,Andrew Weil Ctr Intgrtv Med,College of Medicine - Tucson
+0790,med_health,Medicine & Health,COM General - Research,College of Medicine - Tucson
+0792,med_health,Medicine & Health,AHS Continuing Medical Educ,College of Medicine - Tucson
+0795,med_health,Medicine & Health,Valley Fever Ctr for Excellnc,College of Medicine - Tucson
+0805,med_health,Medicine & Health,Neurosurgery,College of Medicine - Tucson
+0810,med_health,Medicine & Health,Urology,College of Medicine - Tucson
+0850,med_health,Medicine & Health,Diabetes Research,College of Medicine - Tucson
+0851,med_health,Medicine & Health,Neuro Degeneration&Repair Rsch,College of Medicine - Tucson
+0852,med_health,Medicine & Health,Cardiovascular Biology Rsch,College of Medicine - Tucson
+0853,med_health,Medicine & Health,Cancer Research,College of Medicine - Tucson
+0854,med_health,Medicine & Health,Adv Rsch Inst Biomed Imaging,College of Medicine - Tucson
+1401,med_health,Medicine & Health,Physiology-Undergraduate Prog,College of Medicine - Tucson
+6810,med_health,Medicine & Health,AHS General,College of Medicine - Tucson
+0701,med_health,Medicine & Health,Medicine Administration,College of Medicine - Tucson
+0796,med_health,Medicine & Health,AHS Provost Administration,College of Medicine - Tucson
+0798,med_health,Medicine & Health,COM Administration-Research,College of Medicine - Tucson
+4203,med_health,Medicine & Health,Health Education-Undergraduate,College of Public Health
+4204,med_health,Medicine & Health,Epidemiology and Biostatistics,College of Public Health
+4205,med_health,Medicine & Health,Health Promotion Sciences,College of Public Health
+4206,med_health,Medicine & Health,Community Environment & Policy,College of Public Health
+4207,med_health,Medicine & Health,Canyon Ranch Ctr Health Promo,College of Public Health
+4211,med_health,Medicine & Health,Global Health Institute,College of Public Health
+4212,med_health,Medicine & Health,Public Hlth Pract & Trans Rsch,College of Public Health
+4213,med_health,Medicine & Health,ESRAC,College of Public Health
+6816,med_health,Medicine & Health,Ctr of Excellence Womens Hlth,College of Public Health
+4201,med_health,Medicine & Health,Public Health Administration,College of Public Health
+60XX,med_health,Medicine & Health,BMS Department,COM Phx Basic Medical Sci
+60YY,med_health,Medicine & Health,BMS Graduate Program,COM Phx Basic Medical Sci
+84BE,med_health,Medicine & Health,COM Phx  Bioethics,COM Phx Bioethics Med Humanism
+65BI,med_health,Medicine & Health,COM Phx BMI,COM Phx Biomedical Informatics
+65CD,med_health,Medicine & Health,COM Phx Clinical Decision,COM Phx Biomedical Informatics
+65CI,med_health,Medicine & Health,COM Phx Clinical Informatics,COM Phx Biomedical Informatics
+60AG,med_health,Medicine & Health,BMS- A. Gallitano,COM Phx Basic Medical Sci
+85MM,med_health,Medicine & Health,COM-Phx IMM Lab,COM Phx Child Health
+85PI,med_health,Medicine & Health,COM-Phx Pediatric Infectious Disease,COM Phx Child Health
+85RF,med_health,Medicine & Health,COM Phx Neuro-Dev Disorders Lab R Frye,COM Phx Child Health
+85NG,med_health,Medicine & Health,COM Phx NG Lab,COM Phx Child Health
+85NT,med_health,Medicine & Health,COM Phx NT Lab,COM Phx Child Health
+86CD,med_health,Medicine & Health,COM P Program for Clinical Decision Supt,COM Phx Ctr Tox&Pharm Ed&Res
+86CT,med_health,Medicine & Health,COM Phx CTPER,COM Phx Ctr Tox&Pharm Ed&Res
+86MD,med_health,Medicine & Health,COM Phx Center for Med Decision Support,COM Phx Ctr Tox&Pharm Ed&Res
+86PM,med_health,Medicine & Health,COM Phx Precision Medicine,COM Phx Ctr Tox&Pharm Ed&Res
+55EM,med_health,Medicine & Health,COM Phx  Emerg Med,COM PHX Emergency Med Rsch Ctr
+68FC,med_health,Medicine & Health,COM Phx  FCM,COM Phx Family Commun&Prev Med
+69CR,med_health,Medicine & Health,COM Phx  Cardiology,COM Phx Internal Medicine
+69CI,med_health,Medicine & Health,COMP  Clinical Informatics,COM Phx Internal Medicine
+69CS,med_health,Medicine & Health,COM Phx Clin Data Analytics & Dec Spt,COM Phx Internal Medicine
+69CT,med_health,Medicine & Health,COM Phx  Clinical Trials-Internal Med,COM Phx Internal Medicine
+69EN,med_health,Medicine & Health,COM Phx Endocrinology,COM Phx Internal Medicine
+69GI,med_health,Medicine & Health,COM Phx Gastroenterology,COM Phx Internal Medicine
+69HT,med_health,Medicine & Health,COM Phx Hospitalist Internal Medicine,COM Phx Internal Medicine
+69ID,med_health,Medicine & Health,COM Phx Infectious Disease,COM Phx Internal Medicine
+69IG,med_health,Medicine & Health,COM Phx Internal Geriatric,COM Phx Internal Medicine
+69PU,med_health,Medicine & Health,COM Phx Pulmonary,COM Phx Internal Medicine
+69RE,med_health,Medicine & Health,COM Phx Rheumatology,COM Phx Internal Medicine
+62NB,med_health,Medicine & Health,NanoBioscience Department,COM Phx NanoBioscience & Med
+78BA,med_health,Medicine & Health,Neurosurgery Banner,COM Phx Neurosurgery
+78BN,med_health,Medicine & Health,Neurosurgery BNI,COM Phx Neurosurgery
+71OB,med_health,Medicine & Health,COM Phx Obstetrics & Gynecology,COM Phx Obstetrics&Gynecology
+60AS,med_health,Medicine & Health,BMS- A. Sertil,COM Phx Basic Medical Sci
+60AT,med_health,Medicine & Health,BMS- A. Titelbaum,COM Phx Basic Medical Sci
+60BH,med_health,Medicine & Health,BMS- B. Handa,COM Phx Basic Medical Sci
+77ES,med_health,Medicine & Health,COM Phx Endocrinology Surgery,COM Phx Surgery
+77OL,med_health,Medicine & Health,COM Phx Otolaryngology,COM Phx Surgery
+77PL,med_health,Medicine & Health,COM Phx Plastics Surgery,COM Phx Surgery
+60DF,med_health,Medicine & Health,BMS- D. Ferguson,COM Phx Basic Medical Sci
+77TR,med_health,Medicine & Health,COM Phx Trauma Surgery,COM Phx Surgery
+77TS,med_health,Medicine & Health,COM Phx Transplant Surgery,COM Phx Surgery
+60EG,med_health,Medicine & Health,BMS-E. Garofalo,COM Phx Basic Medical Sci
+87TN,med_health,Medicine & Health,COM Phx Translational Neuroscience,COM Phx Translational Neurosci
+88IO,med_health,Medicine & Health,COM Phx Interdisciplinary Oncology,COM-Phx Interdisc Oncology
+69CD,med_health,Medicine & Health,COM Phx  Cardiolgoy,COM Phx Internal Medicine
+69IM,med_health,Medicine & Health,COM Phx  Internal Medicine,COM Phx Internal Medicine
+69LT,med_health,Medicine & Health,COM Phx Liver Transplant Internal Med,COM Phx Internal Medicine
+69PM,med_health,Medicine & Health,COM Phx PMI internal Medicine,COM Phx Internal Medicine
+60EN,med_health,Medicine & Health,BMS- E. Nikulina,COM Phx Basic Medical Sci
+60HG,med_health,Medicine & Health,BMS- H. Glowacka,COM Phx Basic Medical Sci
+60JH,med_health,Medicine & Health,BMS- J. Hsieh,COM Phx Basic Medical Sci
+60KG,med_health,Medicine & Health,BMS- K. Gustin,COM Phx Basic Medical Sci
+60KH,med_health,Medicine & Health,BMS- K. Hastings,COM Phx Basic Medical Sci
+60KW,med_health,Medicine & Health,BMS- K. Whitfield,COM Phx Basic Medical Sci
+60MH,med_health,Medicine & Health,BMS- M. Herbst-Kralovetz,COM Phx Basic Medical Sci
+60MO,med_health,Medicine & Health,BMS- M. O'Neil,COM Phx Basic Medical Sci
+60PB,med_health,Medicine & Health,BMS- P. Boehmer,COM Phx Basic Medical Sci
+60PS,med_health,Medicine & Health,BMS- P. Standley,COM Phx Basic Medical Sci
+60RF,med_health,Medicine & Health,BMS- R. Fisher,COM Phx Basic Medical Sci
+60RG,med_health,Medicine & Health,BMS- R. Gonzales,COM Phx Basic Medical Sci
+60RH,med_health,Medicine & Health,BMS- R. Hammer,COM Phx Basic Medical Sci
+60SK,med_health,Medicine & Health,BMS- S. Kim,COM Phx Basic Medical Sci
+60SQ,med_health,Medicine & Health,BMS- S. Qiu,COM Phx Basic Medical Sci
+60SS,med_health,Medicine & Health,BMS- S. Sharma,COM Phx Basic Medical Sci
+60SZ,med_health,Medicine & Health,BMS- S. Zack,COM Phx Basic Medical Sci
+60TA,med_health,Medicine & Health,BMS- T. Anderson,COM Phx Basic Medical Sci
+60TH,med_health,Medicine & Health,BMS- T. Hale,COM Phx Basic Medical Sci
+60WL,med_health,Medicine & Health,BMS- W. Lee,COM Phx Basic Medical Sci
+62FZ,med_health,Medicine & Health,Nano- F. Zenhausern,COM Phx NanoBioscience & Med
+62JG,med_health,Medicine & Health,Nano- Jian Gu,COM Phx NanoBioscience & Med
+62JL,med_health,Medicine & Health,Nano- J. Lacombe,COM Phx NanoBioscience & Med
+69GR,med_health,Medicine & Health,COM Phx  Cardiolgoy - Guy Reed,COM Phx  Cardiology
+69MG,med_health,Medicine & Health,COM Phx  Cardiolgoy - Martha Gulati,COM Phx  Cardiology
+69JH,med_health,Medicine & Health,COM P Internal Medicine- Jui-Cheng Hsieh,COM Phx  Internal Medicine
+69MF,med_health,Medicine & Health,COM Phx Internal Medicine - Mike Fallon,COM Phx  Internal Medicine
+85JL,med_health,Medicine & Health,COM Phx NT Lab - Jonathan Lifshitz,COM Phx NT Lab
+85RR,med_health,Medicine & Health,COM Phx NT Lab - Rachel Rowe,COM Phx NT Lab
+85TT,med_health,Medicine & Health,COM Phx NT Lab - Theresa Thomas,COM Phx NT Lab
+85MK,med_health,Medicine & Health,COM Phx NG Lab - Michael Kruer,COM Phx NG Lab
+69KK,med_health,Medicine & Health,COM Phx Pulmonary - Ken Knox,COM Phx Pulmonary
+69TW,med_health,Medicine & Health,COM Phx Pulmonary - Ting Wang,COM Phx Pulmonary
+85TS,med_health,Medicine & Health,COM-Phx Ped Infect Dis - Terrence Stull,COM-Phx Pediatric Infectious Disease
+85DA,med_health,Medicine & Health,COM-Phx IMM Lab - David Azorsa,COM-Phx IMM Lab
+0721,med_health,Medicine & Health,Cancer Center Division,AZ Health Sci Ctrs & Divisions
+0723,med_health,Medicine & Health,Asthma/Airway Disease Rsch Ctr,AZ Health Sci Ctrs & Divisions
+0753,med_health,Medicine & Health,Hispanic Center of Excellence,AZ Health Sci Ctrs & Divisions
+0799,med_health,Medicine & Health,AZ Simulation Technology & Edu,AZ Health Sci Ctrs & Divisions
+3310,med_health,Medicine & Health,AZ Health Education Centers,AZ Health Sci Ctrs & Divisions
+6802,med_health,Medicine & Health,UAHS Clin & Interprof Skills,AZ Health Sci Ctrs & Divisions
+6807,med_health,Medicine & Health,UAHS Research,AZ Health Sci Ctrs & Divisions
+6815,med_health,Medicine & Health,All of Us Research Program,AZ Health Sci Ctrs & Divisions
+6820,med_health,Medicine & Health,UAHS Brain Science,AZ Health Sci Ctrs & Divisions
+9941,med_health,Medicine & Health,UAHS Banner Space,AZ Health Sci Ctrs & Divisions
+ABCD,med_health,Medicine & Health,AZ Cntr for Biology of Complex Diseases,AZ Rsch Labs-Interdisciplinary
+EMBI,med_health,Medicine & Health,Evelyn F. McKnight Brain Institute,AZ Rsch Labs-Interdisciplinary
+MCRO,med_health,Medicine & Health,Microcirculation,AZ Rsch Labs-Interdisciplinary
+NSMA,med_health,Medicine & Health,Neural Systems Memory and Aging,AZ Rsch Labs-Interdisciplinary
 0404,astro,Astrophysics,Steward Observatory,College of Science
 0423,sci_math,Science & Mathematics,Psychology,College of Science
 0420,sci_math,Science & Mathematics,Ecology & Evolutionary Biology,College of Science
@@ -42,7 +318,86 @@ LAWC,law,Law,James E Rogers College of Law,Academic Affairs Provost
 0471,sci_math,Science & Mathematics,Arizona Geological Survey,College of Science
 1204,sci_math,Science & Mathematics,Tree Ring Laboratory,College of Science
 2535,sci_math,Science & Mathematics,Sch of Earth & Enviro Sciences,College of Science
-2001,sci_math,Science & Mathematics,James C Wyant Coll Optical Sci,James C Wyant Coll Optical Sci
+OPSC,sci_math,Science & Mathematics,James C Wyant Coll Optical Sci,Academic Affairs Provost
+0102,sci_math,Science & Mathematics,Veterinary Sci & Microbio-Ins,College of Agric and Life Sci
+0108,sci_math,Science & Mathematics,Agric Educ Tech & Innov-Ins,College of Agric and Life Sci
+0112,sci_math,Science & Mathematics,Sch of Natural Resources-Ins,College of Agric and Life Sci
+0115,sci_math,Science & Mathematics,Arid Lands Studies-Ins,College of Agric and Life Sci
+0121,sci_math,Science & Mathematics,Environmental Science-Ins,College of Agric and Life Sci
+0123,sci_math,Science & Mathematics,Nutritional Sciences-Ins,College of Agric and Life Sci
+0124,sci_math,Science & Mathematics,Animal Sciences-Ins,College of Agric and Life Sci
+0125,sci_math,Science & Mathematics,School of Plant Sciences-Ins,College of Agric and Life Sci
+0131,sci_math,Science & Mathematics,Entomology-Ins,College of Agric and Life Sci
+0150,sci_math,Science & Mathematics,Animal&Biomedical Sciences-Ins,College of Agric and Life Sci
+1202,sci_math,Science & Mathematics,Water Resources Rsch Ctr-Res,College of Agric and Life Sci
+2402,sci_math,Science & Mathematics,VeterinaryA Sci & Microbio-Res,College of Agric and Life Sci
+2406,sci_math,Science & Mathematics,Campus Agriculture Center,College of Agric and Life Sci
+2408,sci_math,Science & Mathematics,Agric Educ Tech & Innov-Res,College of Agric and Life Sci
+2411,sci_math,Science & Mathematics,Arizona Experiment Station,College of Agric and Life Sci
+2412,sci_math,Science & Mathematics,Sch of Nat Resource&Enviro-Res,College of Agric and Life Sci
+2415,sci_math,Science & Mathematics,Safford Agriculture Center,College of Agric and Life Sci
+2416,sci_math,Science & Mathematics,YCEDA,College of Agric and Life Sci
+2419,sci_math,Science & Mathematics,Citrus Agriculture Center,College of Agric and Life Sci
+2421,sci_math,Science & Mathematics,Environmental Science-Res,College of Agric and Life Sci
+2423,sci_math,Science & Mathematics,Nutritional Sciences-Res,College of Agric and Life Sci
+2424,sci_math,Science & Mathematics,Animal Sciences-Res,College of Agric and Life Sci
+2425,sci_math,Science & Mathematics,School of Plant Sciences-Res,College of Agric and Life Sci
+2426,sci_math,Science & Mathematics,MARANA AGRICULTURE CENTER,College of Agric and Life Sci
+2427,sci_math,Science & Mathematics,DK Ranch,College of Agric and Life Sci
+2428,sci_math,Science & Mathematics,V-Bar-V Ranch-Res,College of Agric and Life Sci
+2429,sci_math,Science & Mathematics,Yuma Agriculture Center-Res,College of Agric and Life Sci
+2430,sci_math,Science & Mathematics,Maricopa Agricultural Ctr-Res,College of Agric and Life Sci
+2431,sci_math,Science & Mathematics,Entomology-Res,College of Agric and Life Sci
+2433,sci_math,Science & Mathematics,AZ Veterinary Diagnostic Lab,College of Agric and Life Sci
+2450,sci_math,Science & Mathematics,Animal&Biomedical Sciences-Res,College of Agric and Life Sci
+2503,sci_math,Science & Mathematics,Arid Lands Studies-Res,College of Agric and Life Sci
+2504,sci_math,Science & Mathematics,Agriculture Demonstration Farm,College of Agric and Life Sci
+0402,sci_math,Science & Mathematics,Atmospheric Sciences,College of Science
+0417,sci_math,Science & Mathematics,Molecular and Cellular Biology,College of Science
+0422,sci_math,Science & Mathematics,Astronomy,College of Science
+0425,sci_math,Science & Mathematics,Chemistry,College of Science
+0426,sci_math,Science & Mathematics,Planetary Sciences,College of Science
+0438,sci_math,Science & Mathematics,MMT Observatory,College of Science
+0501,sci_math,Science & Mathematics,Institute Atmospheric Physics,College of Science
+2508,sci_math,Science & Mathematics,Biochem & Molecular Biophysics,College of Science
+2519,sci_math,Science & Mathematics,Neuro Communication Disorders,College of Science
+2522,sci_math,Science & Mathematics,AZ Research Labs - Science,College of Science
+2524,sci_math,Science & Mathematics,AZ RESEARCH LABS - CHEMISTRY,College of Science
+2525,sci_math,Science & Mathematics,AZ Research Labs - Geosciences,College of Science
+2526,sci_math,Science & Mathematics,AZ Research Labs - Physics,College of Science
+2528,sci_math,Science & Mathematics,Sch of Info: Sci Tech & Arts,College of Science
+2533,sci_math,Science & Mathematics,GIDP Neuroscience,College of Science
+2536,sci_math,Science & Mathematics,Chemistry & Biochemistry-Sci,College of Science
+2871,sci_math,Science & Mathematics,Lowell Institute for Min Res,College of Science
+0152,sci_math,Science & Mathematics,CALS Administration,College of Agric and Life Sci
+0442,sci_math,Science & Mathematics,Science Administration,College of Science
+1101,sci_math,Science & Mathematics,Flandrau Science Center,College of Science
+SCNC,sci_math,Science & Mathematics,College of Science,Colleges of Letters Arts & Sci
+CARS,sci_math,Science & Mathematics,Carson Scholars Programs,Institute of the Environment
+CBPR,sci_math,Science & Mathematics,CommunityBased Participatory Environment,Institute of the Environment
+CCAS,sci_math,Science & Mathematics,Ctr for Climate Adapt Sci and Solutions,Institute of the Environment
+CLMS,sci_math,Science & Mathematics,Climate Assessment for the Southwest,Institute of the Environment
+HESJ,sci_math,Science & Mathematics,Haury Prgm in Envr and Social Justice,Institute of the Environment
+IEA,sci_math,Science & Mathematics,IE Administration,Institute of the Environment
+IRAP,sci_math,Science & Mathematics,International Research Applications Prgm,Institute of the Environment
+SWCA,sci_math,Science & Mathematics,Southwest Climate Adaptation Science Ctr,Institute of the Environment
+ABMS,sci_math,Science & Mathematics,Analytical & Biological Mass Spec,AZ Rsch Labs-Interdisciplinary
+NPGP,sci_math,Science & Mathematics,Peyghambarian Group,James C Wyant Coll Optical Sci
+BIOT,sci_math,Science & Mathematics,Biotechnology,AZ Rsch Labs-Interdisciplinary
+CGF,sci_math,Science & Mathematics,Cryogenics & Compressed Gas Facility,AZ Rsch Labs-Interdisciplinary
+CIS,sci_math,Science & Mathematics,Center for Insect Science,AZ Rsch Labs-Interdisciplinary
+CORE,sci_math,Science & Mathematics,Research Core Services,AZ Rsch Labs-Interdisciplinary
+CSGP,sci_math,Science & Mathematics,Center for Insect Science GIDP,AZ Rsch Labs-Interdisciplinary
+FGC,sci_math,Science & Mathematics,Functional Genomics Core,AZ Rsch Labs-Interdisciplinary
+FLOW,sci_math,Science & Mathematics,Flow Cytometry Facility,AZ Rsch Labs-Interdisciplinary
+GENE,sci_math,Science & Mathematics,Human Evolutionary Genetics,AZ Rsch Labs-Interdisciplinary
+IMGC,sci_math,Science & Mathematics,Imaging Cores,AZ Rsch Labs-Interdisciplinary
+MNFC,sci_math,Science & Mathematics,Micro/Nano Fabrication Center,AZ Rsch Labs-Interdisciplinary
+MSC,sci_math,Science & Mathematics,Molecular Structures Core,AZ Rsch Labs-Interdisciplinary
+NRL,sci_math,Science & Mathematics,Nuclear Reactor Laboratory,AZ Rsch Labs-Interdisciplinary
+SOCD,sci_math,Science & Mathematics,Social Development,AZ Rsch Labs-Interdisciplinary
+TBIR,sci_math,Science & Mathematics,Translational BioImaging Resource,AZ Rsch Labs-Interdisciplinary
+UAGC,sci_math,Science & Mathematics,University of Arizona Genetics Core,AZ Rsch Labs-Interdisciplinary
 0410,social_sci,Social Sciences,School of Anthropology,College of Social & Behav Sci
 0465,social_sci,Social Sciences,School of Govt & Public Policy,College of Social & Behav Sci
 9006,social_sci,Social Sciences,American Indian Studies Prog,College of Social & Behav Sci
@@ -59,6 +414,19 @@ LAWC,law,Law,James E Rogers College of Law,Academic Affairs Provost
 0448,social_sci,Social Sciences,Ctr for Middle Eastern Studies,College of Social & Behav Sci
 0416,social_sci,Social Sciences,Sch Middle E/N African Studies,College of Social & Behav Sci
 0418,social_sci,Social Sciences,Sociology,College of Social & Behav Sci
+2523,social_sci,Social Sciences,Planning Degree Program,Col Arch Plan & Landscape Arch
+0403,social_sci,Social Sciences,Political Science,College of Social & Behav Sci
+0414,social_sci,Social Sciences,Bur of Applied Rsch in Anthro,College of Social & Behav Sci
+0443,social_sci,Social Sciences,Social & Behavioral Sci Admin,College of Social & Behav Sci
+0444,social_sci,Social Sciences,Soc & Behavioral Sci Rsch Inst,College of Social & Behav Sci
+0445,social_sci,Social Sciences,SW Institute for Rsch on Women,College of Social & Behav Sci
+0447,social_sci,Social Sciences,Southwest Studies Center,College of Social & Behav Sci
+0449,social_sci,Social Sciences,Medieval Reformation Studies,College of Social & Behav Sci
+0476,social_sci,Social Sciences,Political Economy & Moral Sci,College of Social & Behav Sci
+1801,social_sci,Social Sciences,Arizona Quarterly,College of Social & Behav Sci
+2701,social_sci,Social Sciences,Journal of the Southwest,College of Social & Behav Sci
+3206,social_sci,Social Sciences,Sch of Info Res & Library Sci,College of Social & Behav Sci
+SBSC,social_sci,Social Sciences,College of Social & Behav Sci,Colleges of Letters Arts & Sci
 2305,tech_eng,Technology & Engineering,Aerospace & Mechanical Engr,College of Engineering
 2328,tech_eng,Technology & Engineering,Biomedical Engineering,College of Engineering
 2308,tech_eng,Technology & Engineering,Civil Arch Engr and Mechanics,College of Engineering
@@ -67,4 +435,13 @@ LAWC,law,Law,James E Rogers College of Law,Academic Affairs Provost
 2302,tech_eng,Technology & Engineering,Systems and Industrial Engr,College of Engineering
 2804,tech_eng,Technology & Engineering,Materials Science & Engr,College of Engineering
 2802,tech_eng,Technology & Engineering,Mining & Geological Engr,College of Engineering
-0153,tech_eng,Technology & Engineering,CALS Comm and Technologies,
+0153,tech_eng,Technology & Engineering,CALS Comm and Technologies,College of Agric and Life Sci
+0601,tech_eng,Technology & Engineering,Bureau of Mineral Technology,College of Engineering
+2306,tech_eng,Technology & Engineering,Engineering Experiment Station,College of Engineering
+2309,tech_eng,Technology & Engineering,School of Sustainable Engr Sys,College of Engineering
+0122,tech_eng,Technology & Engineering,Biosystems Engineering - Ins,College of Agric and Life Sci
+2422,tech_eng,Technology & Engineering,Biosystems Engineering - Res,College of Agric and Life Sci
+2301,tech_eng,Technology & Engineering,Engineering Administration,College of Engineering
+BCF,tech_eng,Technology & Engineering,Bio Computing Facility,AZ Rsch Labs-Interdisciplinary
+BMGP,tech_eng,Technology & Engineering,Biomedical Engineering GIDP,AZ Rsch Labs-Interdisciplinary
+MWC,tech_eng,Technology & Engineering,Machine & Welding Center,AZ Rsch Labs-Interdisciplinary
