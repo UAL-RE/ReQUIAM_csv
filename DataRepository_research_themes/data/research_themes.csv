@@ -6,6 +6,7 @@ Org Code,Sub-portals,Research Themes,Departments/Colleges/Labs/Centers,Parent Or
 1004,arts_design,Arts & Design,School of Architecture,Col Arch Plan & Landscape Arch
 1005,arts_design,Arts & Design,Sch of Landscape Architecture,Col Arch Plan & Landscape Arch
 1003,arts_design,Arts & Design,Drachman Institute,Col Arch Plan & Landscape Arch
+CREC,arts_design,Arts & Design,Campus Recreation,Acad Initiatives Stdt Success
 3506,arts_design,Arts & Design,School of Theatre Arts,College of Fine Arts
 3507,arts_design,Arts & Design,School of Media Arts,College of Fine Arts
 1001,arts_design,Arts & Design,CAPLA Administration,Col Arch Plan & Landscape Arch
@@ -49,6 +50,15 @@ PRP,arts_design,Arts & Design,PROPS,School of Theatre Arts
 SCN,arts_design,Arts & Design,SCENE,School of Theatre Arts
 SND,arts_design,Arts & Design,SOUND,School of Theatre Arts
 STD,arts_design,Arts & Design,TAR STUDIES,School of Theatre Arts
+ADMN,arts_design,Arts & Design,ADMINISTRATION,School of Art
+ARCH,arts_design,Arts & Design,Col Arch Plan & Landscape Arch,Academic Affairs Provost
+FNRT,arts_design,Arts & Design,College of Fine Arts,VP Arizona Arts
+UAPS,arts_design,Arts & Design,UA Presents Division,VP Arizona Arts
+2201,arts_design,Arts & Design,Museum of Art,UA Presents Division
+2538,arts_design,Arts & Design,Ctr for Creative Photography,UA Presents Division
+7301,arts_design,Arts & Design,UA Presents,UA Presents Division
+CFA,arts_design,Arts & Design,COLLEGE OF FINE ARTS,Fine Arts Administration
+UART,arts_design,Arts & Design,VP Arizona Arts,Sr VP Acad Affairs and Provost
 3001,business_econ,Business & Economics,Eller Administration,Eller College of Management
 BUSN,business_econ,Business & Economics,Eller College of Management,Academic Affairs Provost
 3009,business_econ,Business & Economics,Economics,Eller College of Management
@@ -66,6 +76,9 @@ BUSN,business_econ,Business & Economics,Eller College of Management,Academic Aff
 3013,business_econ,Business & Economics,Economic Science Laboratory,Eller College of Management
 3014,business_econ,Business & Economics,Ctr for Mgmt of Information,Eller College of Management
 3016,business_econ,Business & Economics,Eller Undergraduate Programs,Eller College of Management
+ELLR,business_econ,Business & Economics,DEAN / ELLER COLLEGE OF MANAGEMENT,Academic Affairs Provost
+1518,business_econ,Business & Economics,Agricultural Resource Econ-Ext,CALS Cooperative Ext
+ELMG,business_econ,Business & Economics,McGuire Center,Eller Administration
 3204,education,Education,Disability Psychoeduc Studies,College of Education
 3221,education,Education,Educatnl Policy Studies Pract,College of Education
 3211,education,Education,Educational Psychology,College of Education
@@ -76,6 +89,8 @@ BUSN,business_econ,Business & Economics,Eller College of Management,Academic Aff
 3208,education,Education,Teaching Teacher Education,College of Education
 3212,education,Education,Language Reading and Culture,College of Education
 3201,education,Education,Education - Dean's Office,College of Education
+EDUC,education,Education,College of Education,Academic Affairs Provost
+8403,education,Education,SALT Ctr Learning Disabilities,Stud Success Retention Innov
 0429,humanities,Humanities,English,College of Social & Behav Sci
 0460,humanities,Humanities,Ctr Interpretation Test & Rsch,College of Humanities
 0467,humanities,Humanities,Sch of Intl Lang Lit & Culture,College of Humanities
@@ -97,6 +112,9 @@ BUSN,business_econ,Business & Economics,Eller College of Management,Academic Aff
 0452,humanities,Humanities,Writing Skills Improvement,College of Humanities
 2505,humanities,Humanities,GUADALAJARA SUMMER SCHOOL,College of Humanities
 HMNT,humanities,Humanities,College of Humanities,Colleges of Letters Arts & Sci
+0453,humanities,Humanities,Humanities Program,Academic Affairs Division
+0450,humanities,Humanities,CRITICAL LANGUAGES PROGRAM,Humanities Administration
+POET,humanities,Humanities,Poetry Center,Humanities Administration
 LAWC,law,Law,James E Rogers College of Law,Academic Affairs Provost
 3601,law,Law,Law Administration,James E Rogers College of Law
 3602,law,Law,Law Library,James E Rogers College of Law
@@ -301,6 +319,42 @@ ABCD,med_health,Medicine & Health,AZ Cntr for Biology of Complex Diseases,AZ Rsc
 EMBI,med_health,Medicine & Health,Evelyn F. McKnight Brain Institute,AZ Rsch Labs-Interdisciplinary
 MCRO,med_health,Medicine & Health,Microcirculation,AZ Rsch Labs-Interdisciplinary
 NSMA,med_health,Medicine & Health,Neural Systems Memory and Aging,AZ Rsch Labs-Interdisciplinary
+9908,med_health,Medicine & Health,Health Sciences Administration,Academic Affairs Division
+HLGN,med_health,Medicine & Health,Az Health Sciences Division,Senior VP Health Affairs
+HSCD,med_health,Medicine & Health,AZ Health Sci Ctrs & Divisions,Senior VP Health Affairs
+MDPX,med_health,Medicine & Health,College of Medicine - Phoenix,Senior VP Health Affairs
+MDTC,med_health,Medicine & Health,College of Medicine - Tucson,Senior VP Health Affairs
+NRSG,med_health,Medicine & Health,DEAN / COLLEGE OF NURSING,Senior VP Health Affairs
+PBHL,med_health,Medicine & Health,College of Public Health,Senior VP Health Affairs
+PHRM,med_health,Medicine & Health,College of Pharmacy,Senior VP Health Affairs
+PT16,med_health,Medicine & Health,Phoenix Biomedical Campus,Parking and Transportation
+CROC,med_health,Medicine & Health,CROC Funded IITs,Cancer Center Clinical Trials Tucson
+CTBL,med_health,Medicine & Health,UACC TUC CTO BMT/Leukemia Team,Cancer Center Clinical Trials Tucson
+CTBR,med_health,Medicine & Health,UACC TUC CTO Breast Team,Cancer Center Clinical Trials Tucson
+CTGI,med_health,Medicine & Health,UACC TUC CTO Gastrointestinal Team,Cancer Center Clinical Trials Tucson
+CTGU,med_health,Medicine & Health,UACC TUC CTO Genitourinary Team,Cancer Center Clinical Trials Tucson
+CTGY,med_health,Medicine & Health,UACC TUC CTO Gynecology Team,Cancer Center Clinical Trials Tucson
+CTHN,med_health,Medicine & Health,UACC TUC CTO Head and Neck Team,Cancer Center Clinical Trials Tucson
+CTLU,med_health,Medicine & Health,UACC TUC CTO Lung Team,Cancer Center Clinical Trials Tucson
+CTLY,med_health,Medicine & Health,UACC TUC CTO Lymphoma Team,Cancer Center Clinical Trials Tucson
+CTML,med_health,Medicine & Health,UACC TUC CTO Melanoma Team,Cancer Center Clinical Trials Tucson
+CTPE,med_health,Medicine & Health,UACC TUC CTO Pediatrics Team,Cancer Center Clinical Trials Tucson
+CTPI,med_health,Medicine & Health,UACC TUC CTO Phase I Trials,Cancer Center Clinical Trials Tucson
+CTRO,med_health,Medicine & Health,UACC TUC CTO Radiation Oncology Team,Cancer Center Clinical Trials Tucson
+CTSA,med_health,Medicine & Health,UACC TUC CTO Sarcoma Team,Cancer Center Clinical Trials Tucson
+CTSO,med_health,Medicine & Health,UACC TUC CTO Supportive Oncology Team,Cancer Center Clinical Trials Tucson
+721A,med_health,Medicine & Health,Cancer Center Administration,Cancer Center Division
+721C,med_health,Medicine & Health,Cancer Center Clinical Trials Tucson,Cancer Center Division
+721O,med_health,Medicine & Health,Cancer Center Community Outreach,Cancer Center Division
+721P,med_health,Medicine & Health,Cancer Center Phoenix Campus,Cancer Center Division
+721R,med_health,Medicine & Health,Cancer Center Research,Cancer Center Division
+CCT,med_health,Medicine & Health,Cancer Center Clinical Trials,Cancer Center Division
+CTCO,med_health,Medicine & Health,Clinical Trials-Cooperative Agreements,Cancer Center Division
+0766,med_health,Medicine & Health,Surgery - Clinical Research,Surgery
+713X,med_health,Medicine & Health,"DoM - Cardiology, Kino",DoM - Rosa Fung
+HLAF,med_health,Medicine & Health,Senior VP Health Affairs,SVP Health Sciences
+AHSC,med_health,Medicine & Health,Arizona Health Sciences,University
+GCCS,med_health,Medicine & Health,UAGC Clinical Services,University of Arizona Genetics Core
 0404,astro,Astrophysics,Steward Observatory,College of Science
 0423,sci_math,Science & Mathematics,Psychology,College of Science
 0420,sci_math,Science & Mathematics,Ecology & Evolutionary Biology,College of Science
@@ -354,10 +408,10 @@ OPSC,sci_math,Science & Mathematics,James C Wyant Coll Optical Sci,Academic Affa
 2504,sci_math,Science & Mathematics,Agriculture Demonstration Farm,College of Agric and Life Sci
 0402,sci_math,Science & Mathematics,Atmospheric Sciences,College of Science
 0417,sci_math,Science & Mathematics,Molecular and Cellular Biology,College of Science
-0422,sci_math,Science & Mathematics,Astronomy,College of Science
+0422,astro,Astrophysics,Astronomy,College of Science
 0425,sci_math,Science & Mathematics,Chemistry,College of Science
 0426,sci_math,Science & Mathematics,Planetary Sciences,College of Science
-0438,sci_math,Science & Mathematics,MMT Observatory,College of Science
+0438,astro,Astrophysics,MMT Observatory,College of Science
 0501,sci_math,Science & Mathematics,Institute Atmospheric Physics,College of Science
 2508,sci_math,Science & Mathematics,Biochem & Molecular Biophysics,College of Science
 2519,sci_math,Science & Mathematics,Neuro Communication Disorders,College of Science
@@ -398,6 +452,60 @@ NRL,sci_math,Science & Mathematics,Nuclear Reactor Laboratory,AZ Rsch Labs-Inter
 SOCD,sci_math,Science & Mathematics,Social Development,AZ Rsch Labs-Interdisciplinary
 TBIR,sci_math,Science & Mathematics,Translational BioImaging Resource,AZ Rsch Labs-Interdisciplinary
 UAGC,sci_math,Science & Mathematics,University of Arizona Genetics Core,AZ Rsch Labs-Interdisciplinary
+0855,sci_math,Science & Mathematics,Viper Institute,RDI Centers & Institutes
+1306,sci_math,Science & Mathematics,Biosphere 2,RDI Centers & Institutes
+2547,sci_math,Science & Mathematics,Arizona Space Institute,RDI Centers & Institutes
+2548,sci_math,Science & Mathematics,Tumamoc Hill,RDI Centers & Institutes
+9011,sci_math,Science & Mathematics,BIO5 Institute,RDI Centers & Institutes
+VTMD,sci_math,Science & Mathematics,College of Veterinary Medicine,Academic Affairs Provost
+1307,sci_math,Science & Mathematics,BIOSPHERE 2,Biosphere 2
+AGCE,sci_math,Science & Mathematics,CALS Cooperative Ext,VP Ag/Life/Vet/Ext
+AGGN,sci_math,Science & Mathematics,Ag/Life/Vet/Ext Div,VP Ag/Life/Vet/Ext
+AGSC,sci_math,Science & Mathematics,College of Agric and Life Sci,VP Ag/Life/Vet/Ext
+ICKP,sci_math,Science & Mathematics,Imaging Kuiper - Electron Microscopy,Imaging Cores
+ICML,sci_math,Science & Mathematics,Imaging Marley - Light Microscopy,Imaging Cores
+ILSN,sci_math,Science & Mathematics,Imaging LSN - Optical & Electron,Imaging Cores
+1501,sci_math,Science & Mathematics,Agric Extension Administration,CALS Cooperative Ext
+1503,sci_math,Science & Mathematics,Veterinary & Sci Microbio-Ext,CALS Cooperative Ext
+1508,sci_math,Science & Mathematics,Extension Programs,CALS Cooperative Ext
+1510,sci_math,Science & Mathematics,Tribal Extension Programs,CALS Cooperative Ext
+1511,sci_math,Science & Mathematics,Apache County Office,CALS Cooperative Ext
+1512,sci_math,Science & Mathematics,Sch of Nat Resource&Enviro-Ext,CALS Cooperative Ext
+1515,sci_math,Science & Mathematics,Arid Lands Studies-Ext,CALS Cooperative Ext
+1521,sci_math,Science & Mathematics,Environmental Science-Ext,CALS Cooperative Ext
+1522,sci_math,Science & Mathematics,Cochise County Office,CALS Cooperative Ext
+1523,sci_math,Science & Mathematics,Nutritional Sciences-Ext,CALS Cooperative Ext
+1524,sci_math,Science & Mathematics,Animal Sciences-Ext,CALS Cooperative Ext
+1525,sci_math,Science & Mathematics,School of Plant Sciences-Ext,CALS Cooperative Ext
+1531,sci_math,Science & Mathematics,Entomology-Ext,CALS Cooperative Ext
+1533,sci_math,Science & Mathematics,Coconino County Office,CALS Cooperative Ext
+1534,sci_math,Science & Mathematics,Gila County Office,CALS Cooperative Ext
+1535,sci_math,Science & Mathematics,Graham County Office,CALS Cooperative Ext
+1536,sci_math,Science & Mathematics,Greenlee County Office,CALS Cooperative Ext
+1537,sci_math,Science & Mathematics,Maricopa County Office,CALS Cooperative Ext
+1538,sci_math,Science & Mathematics,Mohave County Office,CALS Cooperative Ext
+1539,sci_math,Science & Mathematics,Navajo County Office,CALS Cooperative Ext
+1540,sci_math,Science & Mathematics,Pima County Office,CALS Cooperative Ext
+1541,sci_math,Science & Mathematics,Pinal County Office,CALS Cooperative Ext
+1542,sci_math,Science & Mathematics,Santa Cruz County Office,CALS Cooperative Ext
+1543,sci_math,Science & Mathematics,Yavapai County Office,CALS Cooperative Ext
+1544,sci_math,Science & Mathematics,Yuma County Office,CALS Cooperative Ext
+1545,sci_math,Science & Mathematics,La Paz County Office,CALS Cooperative Ext
+1550,sci_math,Science & Mathematics,Animal&Biomedical Sciences-Ext,CALS Cooperative Ext
+1551,sci_math,Science & Mathematics,Safford Agriculture Center-Ext,CALS Cooperative Ext
+1552,sci_math,Science & Mathematics,Agric Educ Tech & Innov-Ext,CALS Cooperative Ext
+1553,sci_math,Science & Mathematics,Maricopa Ag Center-Ext,CALS Cooperative Ext
+1554,sci_math,Science & Mathematics,Yuma Ag Center-Ext,CALS Cooperative Ext
+1555,sci_math,Science & Mathematics,Water Resources Resrch Ctr-Ext,CALS Cooperative Ext
+1556,sci_math,Science & Mathematics,Campus Ag Center-Ext,CALS Cooperative Ext
+1558,sci_math,Science & Mathematics,V-Bar-V Ranch-Ext,CALS Cooperative Ext
+1562,sci_math,Science & Mathematics,CALS Admin-Ext,CALS Cooperative Ext
+CBC1,sci_math,Science & Mathematics,Tomat's Accounts,Chemistry & Biochemistry-Sci
+0140,sci_math,Science & Mathematics,Vet Med Administration,College of Veterinary Medicine
+0301,sci_math,Science & Mathematics,ENVIRONMENTAL RESEARCH LAB,Environmental Science-Res
+2507,sci_math,Science & Mathematics,Applied Mathematics GIDP,Graduate College
+0745,sci_math,Science & Mathematics,Physiological Sci Grad Prog,Physiology
+AGLS,sci_math,Science & Mathematics,VP Ag/Life/Vet/Ext,Sr VP Acad Affairs and Provost
 0410,social_sci,Social Sciences,School of Anthropology,College of Social & Behav Sci
 0465,social_sci,Social Sciences,School of Govt & Public Policy,College of Social & Behav Sci
 9006,social_sci,Social Sciences,American Indian Studies Prog,College of Social & Behav Sci
@@ -445,3 +553,8 @@ SBSC,social_sci,Social Sciences,College of Social & Behav Sci,Colleges of Letter
 BCF,tech_eng,Technology & Engineering,Bio Computing Facility,AZ Rsch Labs-Interdisciplinary
 BMGP,tech_eng,Technology & Engineering,Biomedical Engineering GIDP,AZ Rsch Labs-Interdisciplinary
 MWC,tech_eng,Technology & Engineering,Machine & Welding Center,AZ Rsch Labs-Interdisciplinary
+ENGR,tech_eng,Technology & Engineering,College of Engineering,Academic Affairs Provost
+MIS1,tech_eng,Technology & Engineering,MIS dept head,Management Information Systems
+MIS2,tech_eng,Technology & Engineering,MIS AI Lab,Management Information Systems
+1520,tech_eng,Technology & Engineering,Biosystems Engineering - Ext,CALS Cooperative Ext
+EN06,tech_eng,Technology & Engineering,Engineering Research,Engineering Administration
