@@ -1,4 +1,4 @@
-# DataRepository_research_themes
+# requiam_csv
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
@@ -31,11 +31,11 @@ With the above Google Sheet that is imported as a CSV file using `pandas`, it
 generates a CSV file called `data/research_themes.csv`.  There are two versions
 of this file:
 - Trusted version, stable:
-  [[raw]](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/master/DataRepository_research_themes/data/research_themes.csv)
-  [[rendered]](https://github.com/ualibraries/DataRepository_research_themes/blob/master/DataRepository_research_themes/data/research_themes.csv)
+  [[raw]](https://raw.githubusercontent.com/ualibraries/requiam_csv/master/requiam_csv/data/research_themes.csv)
+  [[rendered]](https://github.com/ualibraries/requiam_csv/blob/master/requiam_csv/data/research_themes.csv)
 - Under developement, develop:
-  [[raw]](https://raw.githubusercontent.com/ualibraries/DataRepository_research_themes/develop/DataRepository_research_themes/data/research_themes.csv)
-  [[rendered]](https://github.com/ualibraries/DataRepository_research_themes/blob/develop/DataRepository_research_themes/data/research_themes.csv)
+  [[raw]](https://raw.githubusercontent.com/ualibraries/requiam_csv/develop/requiam_csv/data/research_themes.csv)
+  [[rendered]](https://github.com/ualibraries/requiam_csv/blob/develop/requiam_csv/data/research_themes.csv)
 
 The [workflow](#workflow) describes how version control will be conducted with
 these two different branches. In general, after a maintainer implements a
@@ -75,13 +75,13 @@ Next, clone this repository into a parent folder:
 
 ```
 (rsh_themes) $ cd /path/to/parent/folder
-(rsh_themes) $ git clone https://github.com/ualibraries/DataRepository_research_themes.git
+(rsh_themes) $ git clone https://github.com/ualibraries/requiam_csv.git
 ```
 
 With the activated `conda` environment, you can install with the `setup.py` script:
 
 ```
-(rsh_themes) $ cd /path/to/parent/folder/DataRepository_research_themes
+(rsh_themes) $ cd /path/to/parent/folder/requiam_csv
 (rsh_themes) $ (sudo) python setup.py develop
 ```
 
@@ -103,7 +103,7 @@ the main CSV file, the following command will run and generate a file called
 `dry_run.csv`:
 
 ```
-(rsh_themes) $ python DataRepository_research_themes/script_run
+(rsh_themes) $ python requiam_csv/script_run
 ```
 
 
@@ -113,7 +113,7 @@ By default, the script does a "dry run."  To execute the script and override
 the main CSV file (data/research_themes.csv), include the `execute` argument
 
 ```
-(rsh_themes) $ python DataRepository_research_themes/script_run --execute
+(rsh_themes) $ python requiam_csv/script_run --execute
 ```
 
 
@@ -125,19 +125,19 @@ The recommended workflow to commit changes on the main CSV file is as follows:
  4. If the changes are what you expect, conduct the full execution
  5. Update the version number in README.md, `__init__.py`, and setup.py
  6. Perform a `git add` and `git commit` for 'data/research_themes.csv' and the above files to `develop`
- 7. Create a pull request [here](https://github.com/ualibraries/DataRepository_research_themes/compare/develop?expand=1)
+ 7. Create a pull request [here](https://github.com/ualibraries/requiam_csv/compare/develop?expand=1)
  8. Update your local git repository with `git pull --all`
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ualibraries/DataRepository_research_themes/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ualibraries/requiam_csv/tags).
 
 ## Authors
 
 * Chun Ly, Ph.D. ([@astrochun](http://www.github.com/astrochun)) - [University of Arizona Libraries](https://github.com/ualibraries), [Office of Digital Innovation and Stewardship](https://github.com/UAL-ODIS)
 
 See also the list of
-[contributors](https://github.com/ualibraries/DataRepository_research_themes/contributors) who participated in this project.
+[contributors](https://github.com/ualibraries/requiam_csv/contributors) who participated in this project.
 
 
 ## License
