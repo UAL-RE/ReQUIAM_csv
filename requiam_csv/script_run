@@ -10,8 +10,8 @@ from datetime import date
 import configparser
 import argparse
 
-from DataRepository_research_themes.create_csv import create_csv
-from DataRepository_research_themes.logger import LogClass
+from requiam_csv.create_csv import create_csv
+from requiam_csv.logger import LogClass
 
 today = date.today()
 
