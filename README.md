@@ -1,4 +1,4 @@
-# requiam_csv
+# ![CSV Generation Tool for ReQUIAM](img/ReQUIAM_csv_full.png)
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
