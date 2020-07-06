@@ -17,7 +17,7 @@
 
 Constructs a mapping list between research themes ("portals") and EDS/LDAP
 organization code to work with our
-[Figshare patron management software](https://github.com/ualibraries/DataRepository_patrons).
+[Figshare patron management software](https://github.com/ualibraries/ReQUIAM).
 This code will generate a CSV file that is used for automation.
 
 The code imports a [Google Sheet](https://docs.google.com/spreadsheets/d/1f8tNxj96g_4NW6LWAIx8s3AxRoBbwRvFIxUXMAYyVlU/edit#gid=1301862342)
@@ -31,11 +31,11 @@ With the above Google Sheet that is imported as a CSV file using `pandas`, it
 generates a CSV file called `data/research_themes.csv`.  There are two versions
 of this file:
 - Trusted version, stable:
-  [[raw]](https://raw.githubusercontent.com/ualibraries/requiam_csv/master/requiam_csv/data/research_themes.csv)
-  [[rendered]](https://github.com/ualibraries/requiam_csv/blob/master/requiam_csv/data/research_themes.csv)
+  [[raw]](https://raw.githubusercontent.com/ualibraries/ReQUIAM_csv/master/requiam_csv/data/research_themes.csv)
+  [[rendered]](https://github.com/ualibraries/ReQUIAM_csv/blob/master/requiam_csv/data/research_themes.csv)
 - Under developement, develop:
-  [[raw]](https://raw.githubusercontent.com/ualibraries/requiam_csv/develop/requiam_csv/data/research_themes.csv)
-  [[rendered]](https://github.com/ualibraries/requiam_csv/blob/develop/requiam_csv/data/research_themes.csv)
+  [[raw]](https://raw.githubusercontent.com/ualibraries/ReQUIAM_csv/develop/requiam_csv/data/research_themes.csv)
+  [[rendered]](https://github.com/ualibraries/ReQUIAM_csv/blob/develop/requiam_csv/data/research_themes.csv)
 
 The [workflow](#workflow) describes how version control will be conducted with
 these two different branches. In general, after a maintainer implements a
@@ -75,13 +75,13 @@ Next, clone this repository into a parent folder:
 
 ```
 (rsh_themes) $ cd /path/to/parent/folder
-(rsh_themes) $ git clone https://github.com/ualibraries/requiam_csv.git
+(rsh_themes) $ git clone https://github.com/ualibraries/ReQUIAM_csv.git
 ```
 
 With the activated `conda` environment, you can install with the `setup.py` script:
 
 ```
-(rsh_themes) $ cd /path/to/parent/folder/requiam_csv
+(rsh_themes) $ cd /path/to/parent/folder/ReQUIAM_csv
 (rsh_themes) $ (sudo) python setup.py develop
 ```
 
@@ -90,7 +90,7 @@ This will automatically installed the required `numpy` and `pandas` packages.
 You can confirm installation via `conda list`
 
 ```
-(rsh_themes) $ conda list datarepository-research-themes
+(rsh_themes) $ conda list requiam_csv
 ```
 
 You should see that the version is `0.9.4`.
@@ -125,19 +125,19 @@ The recommended workflow to commit changes on the main CSV file is as follows:
  4. If the changes are what you expect, conduct the full execution
  5. Update the version number in README.md, `__init__.py`, and setup.py
  6. Perform a `git add` and `git commit` for 'data/research_themes.csv' and the above files to `develop`
- 7. Create a pull request [here](https://github.com/ualibraries/requiam_csv/compare/develop?expand=1)
+ 7. Create a pull request [here](https://github.com/ualibraries/ReQUIAM_csv/compare/develop?expand=1)
  8. Update your local git repository with `git pull --all`
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ualibraries/requiam_csv/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ualibraries/ReQUIAM_csv/tags).
 
 ## Authors
 
 * Chun Ly, Ph.D. ([@astrochun](http://www.github.com/astrochun)) - [University of Arizona Libraries](https://github.com/ualibraries), [Office of Digital Innovation and Stewardship](https://github.com/UAL-ODIS)
 
 See also the list of
-[contributors](https://github.com/ualibraries/requiam_csv/contributors) who participated in this project.
+[contributors](https://github.com/ualibraries/ReQUIAM_csv/contributors) who participated in this project.
 
 
 ## License
