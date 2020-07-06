@@ -7,10 +7,10 @@ with open("requirements.txt", "r") as fr:
     requirements = fr.read().splitlines()
 
 setup(
-    name='DataRepository_research_themes',
-    version='0.9.4',
-    packages=find_packages('DataRepository_research_themes'),
-    url='https://github.com/ualibraries/DataRepository_research_themes',
+    name='requiam_csv',
+    version='0.10.0',
+    packages=find_packages('requiam_csv'),
+    url='https://github.com/ualibraries/ReQUIAM_csv',
     license='MIT License',
     author='Chun Ly',
     author_email='astro.chun@gmail.com',
