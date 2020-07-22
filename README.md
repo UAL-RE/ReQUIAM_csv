@@ -4,6 +4,7 @@
 - [Getting Started](#getting-started)
     - [Requirements](#requirements)
     - [Installation Instructions](#installation-instructions)
+    - [Configuration Settings](#configuration-settings)
     - [Testing Installation](#testing-installation)
 - [Execution](#execution)
     - [Workflow](#workflow)
@@ -93,6 +94,13 @@ You can confirm installation via `conda list`
 ```
 
 You should see that the version is `0.10.0`.
+
+
+### Configuration Settings
+
+Configuration settings are specified through the [`default.ini`](requiam_csv/default.ini)
+file. These settings include the Google Sheet information and CSV file names
+(do **not** change as this will break ReQUIAM).
 
 
 ### Testing Installation
