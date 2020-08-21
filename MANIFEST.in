@@ -1,0 +1,4 @@
+include img/*
+include requiam_csv/script_run
+include requiam_csv/*ini
+include requiam_csv/data/research_themes.csv
