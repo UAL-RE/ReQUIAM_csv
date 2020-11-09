@@ -1,5 +1,6 @@
 # log_dir path
 logs/
+logs
 
 # Dry run files
 dry_run*
