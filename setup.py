@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -9,7 +9,7 @@ with open("requirements.txt", "r") as fr:
 setup(
     name='requiam_csv',
     version='0.10.5',
-    packages=find_packages('requiam_csv'),
+    packages=['requiam_csv'],
     url='https://github.com/ualibraries/ReQUIAM_csv',
     license='MIT License',
     author='Chun Ly',
