@@ -43,4 +43,4 @@ jobs:
         pytest --cov-report term-missing --cov-config=.coveragerc --cov=requiam_csv tests
     - name: Test scripts
       run: |
-        ./scripts/script_run
+        ./requiam_csv/script_run
