@@ -1,4 +1,4 @@
-#!/user/bin/env python
+#!/usr/bin/env python
 
 from os import path
 from os import mkdir
@@ -71,5 +71,3 @@ if __name__ == '__main__':
     except ValueError:
         log.warning("ValueError from create_csv !")
         log.warning("script_run: purports to die of unnatural causes !")
-
-
