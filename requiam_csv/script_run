@@ -62,9 +62,9 @@ if __name__ == '__main__':
         mkdir(outfile_dir0)
 
     if args.execute:
-        outfile = path.join(outfile_dir, config.get('global', 'outfile'))
+        outfile = path.join(outfile_dir0, config.get('global', 'outfile'))
     else:
-        outfile = path.join(outfile_dir, config.get('global', 'outfile_dryrun'))
+        outfile = path.join(outfile_dir0, config.get('global', 'outfile_dryrun'))
 
     try:
         create_csv(url, outfile, log)

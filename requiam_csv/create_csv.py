@@ -9,7 +9,6 @@ from .commons import no_org_code_index
 from datetime import datetime as dt
 
 co_filename = __file__
-co_dir = path.dirname(co_filename)
 
 
 def create_csv(url, outfile, log):
@@ -103,7 +102,7 @@ def create_csv(url, outfile, log):
     df_new = df_new[cols_order]
 
     # Write file.  File is placed within the git repository
-    df_new.to_csv(path.join(co_dir, outfile), index=False)
+    df_new.to_csv(outfile, index=False)
 
     t_stop = dt.now()
 
