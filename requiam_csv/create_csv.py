@@ -68,7 +68,7 @@ def create_csv(url, outfile, log):
 
     # Identify portal for each university organization
     for i in range(len(overall_theme)):
-        log.info("# Working on {}".format(overall_theme[i]))
+        log.info(f"# Working on {overall_theme[i]}")
 
         if i != len(overall_theme)-1:
             sub_index = np.arange(overall_theme_index[i]+1,
@@ -112,5 +112,5 @@ def create_csv(url, outfile, log):
     HH = sec // 3600
     MM = (sec // 60) - (HH * 60)
     SS = sec - (HH * 3600) - (MM * 60)
-    t_format = "Total time: {} hours  {} minutes  {} seconds".format(HH, MM, SS)
+    t_format = f"Total time: {HH} hours  {MM} minutes  {SS} seconds"
     log.info(t_format)
