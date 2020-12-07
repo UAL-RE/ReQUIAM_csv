@@ -102,6 +102,7 @@ def create_csv(url, outfile, log):
     df_new = df_new[cols_order]
 
     # Write file.  File is placed within the git repository
+    log.info(f"Writing: {outfile}")
     df_new.to_csv(outfile, index=False)
 
     t_stop = dt.now()
