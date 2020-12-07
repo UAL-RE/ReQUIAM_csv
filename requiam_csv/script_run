@@ -57,6 +57,7 @@ if __name__ == '__main__':
         outfile_dir0 = path.join('requiam_csv', outfile_dir)
     else:
         outfile_dir0 = path.join(co_dir, outfile_dir)
+    log.info(f"outfile_dir0: {outfile_dir0}")
     if not path.exists(outfile_dir0):
         mkdir(outfile_dir0)
 
