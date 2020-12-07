@@ -25,7 +25,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'ci skip') || !contains(github.event.head_commit.message, 'skip ci')"
     strategy:
       matrix:
-        python-version: ['3.7', '3.7.5', '3.8']
+        python-version: ['3.7', '3.8']
 
     steps:
     - uses: actions/checkout@v2
@@ -43,4 +43,4 @@ jobs:
         pytest --cov-report term-missing --cov-config=.coveragerc --cov=requiam_csv tests
     - name: Test scripts
       run: |
-        ./requiam_csv/script_run
+        ./requiam_csv/script_run --ci

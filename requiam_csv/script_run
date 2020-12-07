@@ -25,6 +25,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Command-line driver for research themes management.')
     parser.add_argument('--execute', help='Boolean to force full execution (default is a "dry run"',
                         action='store_true')
+    parser.add_argument('--ci', action='store_true', help='Flag for CI build tests')
     args = parser.parse_args()
 
     # Parse configuration from default.ini
@@ -52,7 +53,10 @@ if __name__ == '__main__':
 
     # Define output filename
     outfile_dir  = config.get('global', 'outfile_dir')
-    outfile_dir0 = path.join(co_dir, outfile_dir)
+    if args.ci:
+        outfile_dir0 = path.join('requiam_csv', outfile_dir)
+    else:
+        outfile_dir0 = path.join(co_dir, outfile_dir)
     if not path.exists(outfile_dir0):
         mkdir(outfile_dir0)
 
