@@ -54,14 +54,14 @@ def inspect_csv(df, log):
     if n_dup == 0:
         log.info("PASS: No duplicate entries found!")
     else:
-        log.warning("MAJOR: Duplicate entries found, N={}!".format(n_dup))
+        log.warning(f"MAJOR: Duplicate entries found, N={n_dup}!")
         log.warning("MAJOR: Please manually fix spreadsheet before proceeding!")
         log.warning("MAJOR: Duplicate entries below:")
         log.warning("MAJOR: Org Code : [Spreadsheet Index]")
         dup = np.where(unique_counts > 1)[0]
         for dd in dup:
             df_repeat = df.loc[df['Org Code'] == str(unique[dd])]
-            log.info("   {} : {}".format(unique[dd], df_repeat.index.values+off))
+            log.info(f"   {unique[dd]} : {df_repeat.index.values + off}")
         check += 1
 
     # Check that a valid Org Code is available when something is provided
@@ -73,12 +73,12 @@ def inspect_csv(df, log):
     if n_bad == 0:
         log.info("PASS: No bad entries in Column E!")
     else:
-        log.warning("MAJOR: Entry in Column E is incorrect, N={}!".format(n_bad))
+        log.warning(f"MAJOR: Entry in Column E is incorrect, N={n_bad}!")
         log.warning("MAJOR: Please manually fix spreadsheet before proceeding!")
         log.warning("MAJOR: Bad entries below:")
         log.warning("MAJOR: Department : [Spreadsheet Index]")
         for bb in bad_dept.index:
-            log.info("   {} : {}".format(dept.loc[bb], bb + off))
+            log.info(f"   {dept.loc[bb]} : {bb + off}")
         check += 1
 
     # Check that a valid Research Themes is available when Sub-portal is
@@ -94,23 +94,23 @@ def inspect_csv(df, log):
     if bad_theme.size == 0:
         log.info("PASS: No bad entries in Column C!")
     else:
-        log.warning("MAJOR: Entry in Column C is unavailable, N={}!".format(bad_theme.size))
+        log.warning(f"MAJOR: Entry in Column C is unavailable, N={bad_theme.size}!")
         log.warning("MAJOR: Please manually fix spreadsheet before proceeding!")
         log.warning("MAJOR: Bad entries below:")
         log.warning("MAJOR: Portal : [Spreadsheet Index]")
         for bb in bad_theme.index:
-            log.info("   {} : {}".format(sub_portal[bb], bb + off))
+            log.info(f"   {sub_portal[bb]} : {bb + off}")
         check += 1
 
     if bad_portal.size == 0:
         log.info("PASS: No bad entries in Column D!")
     else:
-        log.warning("MAJOR: Entry in Column D is unavailable, N={}!".format(bad_portal.size))
+        log.warning(f"MAJOR: Entry in Column D is unavailable, N={bad_portal.size}!")
         log.warning("MAJOR: Please manually fix spreadsheet before proceeding!")
         log.warning("MAJOR: Bad entries below:")
         log.warning("MAJOR: Theme : [Spreadsheet Index]")
         for bb in bad_portal.index:
-            log.info("   {} : {}".format(rsh_theme[bb], bb + off))
+            log.info(f"   {rsh_theme[bb]} : {bb + off}")
         check += 1
 
     if check != 0:
