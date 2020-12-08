@@ -1,5 +1,10 @@
 # ![CSV Generation Tool for ReQUIAM](img/ReQUIAM_csv_full.png)
 
+[![GitHub build](https://github.com/ualibraries/ReQUIAM_csv/workflows/Python%20package/badge.svg)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
+![GitHub top language](https://img.shields.io/github/languages/top/ualibraries/ReQUIAM_csv)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ualibraries/ReQUIAM_csv)
+![GitHub](https://img.shields.io/github/license/ualibraries/ReQUIAM_csv?color=blue)
+
 - [Overview](#overview)
 - [Getting Started](#getting-started)
     - [Requirements](#requirements)
@@ -93,7 +98,7 @@ You can confirm installation via `conda list`
 (rsh_themes) $ conda list requiam_csv
 ```
 
-You should see that the version is `0.10.5`.
+You should see that the version is `0.11.0`.
 
 
 ### Configuration Settings
