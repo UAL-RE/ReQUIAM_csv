@@ -98,7 +98,7 @@ You can confirm installation via `conda list`
 (rsh_themes) $ conda list requiam_csv
 ```
 
-You should see that the version is `0.11.0`.
+You should see that the version is `0.10.5`.
 
 
 ### Configuration Settings
