@@ -1,6 +1,6 @@
 # ![CSV Generation Tool for ReQUIAM](img/ReQUIAM_csv_full.png)
 
-[![GitHub build](https://github.com/ualibraries/ReQUIAM_csv/workflows/Python%20package/badge.svg?branch=feature/gh_actions_build_test)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
+[![GitHub build](https://github.com/ualibraries/ReQUIAM_csv/workflows/Python%20package/badge.svg?branch=master)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
 ![GitHub top language](https://img.shields.io/github/languages/top/ualibraries/ReQUIAM_csv)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ualibraries/ReQUIAM_csv)
 ![GitHub](https://img.shields.io/github/license/ualibraries/ReQUIAM_csv?color=blue)
