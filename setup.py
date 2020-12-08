@@ -8,7 +8,7 @@ with open("requirements.txt", "r") as fr:
 
 setup(
     name='requiam_csv',
-    version='0.11.0',
+    version='0.10.5',
     packages=['requiam_csv'],
     url='https://github.com/ualibraries/ReQUIAM_csv',
     license='MIT License',
