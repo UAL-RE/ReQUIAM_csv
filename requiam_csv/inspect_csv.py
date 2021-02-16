@@ -1,4 +1,6 @@
 import numpy as np
+from pandas import DataFrame
+from logging import Logger
 
 from .commons import no_org_code_index
 
@@ -6,7 +8,7 @@ from .commons import no_org_code_index
 off = 2
 
 
-def inspect_csv(df, log):
+def inspect_csv(df: DataFrame, log: Logger):
     """
     Purpose:
       Inspects Google Sheet CSV-export table to identify issues.

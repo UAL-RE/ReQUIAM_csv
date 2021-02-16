@@ -18,10 +18,10 @@ class LogClass:
       logfile: Filename for exported log file
     """
 
-    def __init__(self, log_dir, logfile):
+    def __init__(self, log_dir: str, logfile: str):
         self.LOG_FILENAME = join(log_dir, logfile)
 
-    def get_logger(self):
+    def get_logger(self) -> logging.Logger:
         log_level = logging.INFO
         log = logging.getLogger(self.LOG_FILENAME)
         if not getattr(log, 'handler_set', None):
