@@ -5,13 +5,14 @@ from urllib.error import URLError
 
 from .inspect_csv import inspect_csv
 from .commons import no_org_code_index
+from logging import Logger
 
 from datetime import datetime as dt
 
 co_filename = __file__
 
 
-def create_csv(url, outfile, log):
+def create_csv(url: str, outfile: str, log: Logger):
     """
     Purpose:
       This code generates a list of organization codes and associated
