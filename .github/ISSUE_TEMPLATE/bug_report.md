@@ -17,10 +17,11 @@ assignees: ''
 **Outputted Messages**
 <!-- Provide the full message log if possible or a subset that includes a few lines before the failure -->
 
-**Version information (please complete the following, default in brackets)**
- - ReQUIAM_csv version: [e.g. `0.11.0`] 
- - `pandas` version: [e.g., 1.2.1]
- - `numpy` version: [e.g., 1.19.5]
+**Version information**
+<!-- Update with tagged version or branch full name-->
+ - ReQUIAM_csv version: [e.g. `0.11.0`]
+[requirements](https://github.com/ualibraries/ReQUIAM_csv/blob/v<version>/requirements.txt)
+[requirements](https://github.com/ualibraries/ReQUIAM_csv/blob/<branch>/requirements.txt)
 
 *Expected behavior*
 <!-- A clear and concise description of what you expected to happen. -->
