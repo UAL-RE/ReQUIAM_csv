@@ -12,6 +12,8 @@
 #
 import os
 import sys
+import sphinx_rtd_theme
+import sphinx_autodoc_typehints
 sys.path.insert(0, os.path.abspath('../../requiam_csv'))
 
 
@@ -22,7 +24,7 @@ copyright = '2021, Chun Ly'
 author = 'Chun Ly'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.12.0'
+release = '0.12.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,7 +33,10 @@ release = 'v0.12.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-]
+    "sphinx_rtd_theme",
+    "sphinx.ext.autodoc",
+    "sphinx_autodoc_typehints",
+]   
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
