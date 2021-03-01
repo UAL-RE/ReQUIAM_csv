@@ -14,13 +14,13 @@ import os
 import sys
 import sphinx_rtd_theme
 import sphinx_autodoc_typehints
-sys.path.insert(0, os.path.abspath('../../requiam_csv'))
+sys.path.insert(0, os.path.abspath('../../'))
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'ReQUIAM_csv'
-copyright = '2021, Chun Ly'
+copyright = '2021, University of Arizona'
 author = 'Chun Ly'
 
 # The full version, including alpha/beta/rc tags
