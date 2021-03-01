@@ -1,9 +1,15 @@
 # ![CSV Generation Tool for ReQUIAM](img/ReQUIAM_csv_full.png)
 
-[![GitHub build](https://github.com/ualibraries/ReQUIAM_csv/workflows/Python%20package/badge.svg)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
+[![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/ualibraries/ReQUIAM_csv/Python%20package/master?color=blue&label=build%20%28master%29&logo=github)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22+branch%3Amaster)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ualibraries/ReQUIAM_csv/Python%20package?color=blue&label=build%20%28latest%29&logo=github)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
+[![docs](https://img.shields.io/github/workflow/status/ualibraries/ReQUIAM_csv/Sphinx%20Docs%20Check?label=docs&color=blue)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Sphinx+Docs+Check%22)
+[![Read the Docs](https://img.shields.io/readthedocs/ReQUIAM_csv?color=blue&label=RTDs)](https://readthedocs.org/projects/ReQUIAM_csv/builds/)
 ![GitHub top language](https://img.shields.io/github/languages/top/ualibraries/ReQUIAM_csv)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ualibraries/ReQUIAM_csv)
 ![GitHub](https://img.shields.io/github/license/ualibraries/ReQUIAM_csv?color=blue)
+
+Full documentation for this code is available on
+[Read the Docs](https://requiam_csv.readthedocs.io/en/latest/).
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
