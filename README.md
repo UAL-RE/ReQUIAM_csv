@@ -62,7 +62,7 @@ These instructions will have the code running on your local or virtual machine.
 ### Requirements
 
 You will need the following to have a working copy of this software. See [installation](#installation-instructions) steps:
-1. Python (3.7.5)
+1. Python (>=3.7.9)
 2. [`numpy`](https://numpy.org/doc/) ([1.18.0](https://numpy.org/doc/1.18/))
 3. [`pandas`](https://pandas.pydata.org/) ([0.25.3](https://pandas.pydata.org/pandas-docs/version/0.25.3/))
 
@@ -71,14 +71,14 @@ You will need the following to have a working copy of this software. See [instal
 
 #### Python and setting up a `conda` environment
 
-First, install a working version of Python (v3.7.5).  We recommend using the
+First, install a working version of Python (>=3.7.9).  We recommend using the
 [Anaconda](https://www.anaconda.com/distribution/) package installer.
 
 After you have Anaconda installed, you will want to create a separate `conda` environment
 and activate it:
 
 ```
-$ (sudo) conda create -n rsh_themes python=3.7.5
+$ (sudo) conda create -n rsh_themes python=3.7
 $ conda activate rsh_themes
 ```
 
