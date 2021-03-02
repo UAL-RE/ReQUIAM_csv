@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 # -- Project information -----------------------------------------------------
 
 project = 'ReQUIAM_csv'
-copyright = '2021, University of Arizona'
+copyright = '2021, University of Arizona Libraries'
 author = 'Chun Ly'
 
 # The full version, including alpha/beta/rc tags
