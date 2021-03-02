@@ -24,11 +24,9 @@ def inspect_csv(df: DataFrame, log: Logger):
        - Invalid/incorrect entries in 'Departments/Colleges/Labs/Centers'
          This result in not getting a proper Org Code
        - Missing 'Research Themes' or Sub-portals if either one is provided
-       - TBD
 
     :param df: pandas dataframe
     :param log: A LogClass()._get_logger() object
-    :return:
     """
 
     check = 0
