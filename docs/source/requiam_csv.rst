@@ -4,32 +4,32 @@ ReQUIAM\_csv package
 Submodules
 ----------
 
-ReQUIAM\_csv.commons module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``commons`` module
+~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.commons
    :members:
    :undoc-members:
    :show-inheritance:
 
-ReQUIAM\_csv.create\_csv module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``create_csv`` module
+~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.create_csv
    :members:
    :undoc-members:
    :show-inheritance:
 
-ReQUIAM\_csv.inspect\_csv module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``inspect_csv`` module
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.inspect_csv
    :members:
    :undoc-members:
    :show-inheritance:
 
-ReQUIAM\_csv.logger module
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+``logger`` module
+~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.logger
    :members:
