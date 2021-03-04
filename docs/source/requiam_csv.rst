@@ -5,7 +5,7 @@ Submodules
 ----------
 
 ReQUIAM\_csv.commons module
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.commons
    :members:
@@ -13,7 +13,7 @@ ReQUIAM\_csv.commons module
    :show-inheritance:
 
 ReQUIAM\_csv.create\_csv module
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.create_csv
    :members:
@@ -21,7 +21,7 @@ ReQUIAM\_csv.create\_csv module
    :show-inheritance:
 
 ReQUIAM\_csv.inspect\_csv module
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.inspect_csv
    :members:
@@ -29,7 +29,7 @@ ReQUIAM\_csv.inspect\_csv module
    :show-inheritance:
 
 ReQUIAM\_csv.logger module
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: requiam_csv.logger
    :members:
