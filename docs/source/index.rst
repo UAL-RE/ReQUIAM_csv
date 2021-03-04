@@ -29,12 +29,12 @@ management
    :maxdepth: 2
    :caption: Contents:
 
-   Overview
-   GettingStarted
-   Execution
-   Versioning
-   Authors
-   License
+   overview
+   getting_started
+   execution
+   versioning
+   authors
+   license
    modules
 
 Indices and tables
