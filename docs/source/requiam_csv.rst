@@ -35,11 +35,3 @@ ReQUIAM\_csv.logger module
    :members:
    :undoc-members:
    :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: requiam_csv
-   :members:
-   :undoc-members:
-   :show-inheritance:
