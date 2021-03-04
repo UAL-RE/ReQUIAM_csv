@@ -8,9 +8,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ualibraries/ReQUIAM_csv)
 ![GitHub](https://img.shields.io/github/license/ualibraries/ReQUIAM_csv?color=blue)
 
-Full documentation for this code is available on
-[Read the Docs](https://requiam_csv.readthedocs.io/en/latest/).
-
 - [Overview](#overview)
 - [Getting Started](#getting-started)
     - [Requirements](#requirements)
