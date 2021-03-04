@@ -14,15 +14,15 @@ management
 |GitHub build (master)| |GitHub build| |docs| |GitHub top language| |GitHub release
 (latest by date)| |GitHub|
 
-.. |GitHub build (master)| image:: https://img.shields.io/github/workflow/status/ualibraries/ReQUIAM_csv/Python%20package/master?color=blue&label=build%20%28master%29&logo=github
-   :target: https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22+branch%3Amaster
-.. |GitHub build| image:: https://img.shields.io/github/workflow/status/ualibraries/ReQUIAM_csv/Python%20package?color=blue&label=build%20%28latest%29&logo=github
-   :target: https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22
-.. |docs| image:: https://img.shields.io/github/workflow/status/ualibraries/ReQUIAM_csv/Sphinx%20Docs%20Check?label=docs&color=blue
-   :target: https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Sphinx+Docs+Check%22
-.. |GitHub top language| image:: https://img.shields.io/github/languages/top/ualibraries/ReQUIAM_csv
-.. |GitHub release (latest by date)| image:: https://img.shields.io/github/v/release/ualibraries/ReQUIAM_csv
-.. |GitHub| image:: https://img.shields.io/github/license/ualibraries/ReQUIAM_csv?color=blue
+.. |GitHub build (master)| image:: https://img.shields.io/github/workflow/status/UAL-ODIS/ReQUIAM_csv/Python%20package/master?color=blue&label=build%20%28master%29&logo=github
+   :target: https://github.com/UAL-ODIS/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22+branch%3Amaster
+.. |GitHub build| image:: https://img.shields.io/github/workflow/status/UAL-ODIS/ReQUIAM_csv/Python%20package?color=blue&label=build%20%28latest%29&logo=github
+   :target: https://github.com/UAL-ODIS/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22
+.. |docs| image:: https://img.shields.io/github/workflow/status/UAL-ODIS/ReQUIAM_csv/Sphinx%20Docs%20Check?label=docs&color=blue
+   :target: https://github.com/UAL-ODIS/ReQUIAM_csv/actions?query=workflow%3A%22Sphinx+Docs+Check%22
+.. |GitHub top language| image:: https://img.shields.io/github/languages/top/UAL-ODIS/ReQUIAM_csv
+.. |GitHub release (latest by date)| image:: https://img.shields.io/github/v/release/UAL-ODIS/ReQUIAM_csv
+.. |GitHub| image:: https://img.shields.io/github/license/UAL-ODIS/ReQUIAM_csv?color=blue
 
 
 .. toctree::
