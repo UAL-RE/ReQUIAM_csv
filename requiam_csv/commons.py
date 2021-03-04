@@ -4,12 +4,11 @@ from pandas import DataFrame
 
 def no_org_code_index(df: DataFrame) -> np.ndarray:
     """
-    Purpose:
-      Identify entries without an Org Code.  This is based on whether
-      the value is set to NaN
+    Identify entries without an Org Code. This is based on whether
+    the value is set to NaN
 
-    :param df: pandas dataframe
-    :return no_org_code: numpy array containing elements
+    :param df: Research Themes dataframe
+    :return: Array containing elements
     """
 
     no_org_code = np.where(df['Org Code'].isna() &
