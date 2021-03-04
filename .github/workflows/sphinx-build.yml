@@ -1,0 +1,22 @@
+name: "Sphinx Docs Check"
+on:
+  push:
+    paths:
+    - 'docs/**'
+    - 'requiam_csv/**'
+  pull_request:
+    paths:
+    - 'docs/**'
+    - 'requiam_csv/**'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout requiam_csv
+      uses: actions/checkout@v2
+    - name: Sphinx build
+      uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
