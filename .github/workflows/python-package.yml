@@ -10,12 +10,16 @@ on:
       - '**.png'
       - 'img/*'
       - 'LICENSE'
+      - 'docs/**'
+      - '**.rst'
   pull_request:
     paths-ignore:
       - '**.md'
       - '**.png'
       - 'img/*'
       - 'LICENSE'
+      - 'docs/**'
+      - '**.rst'
 
 jobs:
   build:
