@@ -14,18 +14,19 @@ co_filename = __file__
 
 def create_csv(url: str, outfile: str, log: Logger):
     """
-    Purpose:
-      This code generates a list of organization codes and associated
-      portals for figshare account management.
-       - The initial spreadsheet, which is curated by UA Libraries, is
-         provided through the [url] input.
-       - The exported CSV file will be placed in this git repo. Current
-         path and file preference:
-           DataRepository_research_themes/data/research_themes.csv
+    Generates a list of organization codes and associated
+    portals for figshare account management.
+
+    - The initial spreadsheet, which is curated by UA Libraries, is
+      provided through the [url] input.
+    
+    - The exported CSV file will be placed in this git repo. Current
+      path and file preference:
+        requiam_csv/data/research_themes.csv
 
     :param url: Full url to CSV
     :param outfile: Exported file in CSV format
-    :param log: LogClass.get_logger() object
+    :param log: Logger object
     """
 
     t_start = dt.now()
