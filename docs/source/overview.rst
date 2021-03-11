@@ -16,15 +16,14 @@ Google Sheets are:
 4. Ability to grant access to University of Arizona Libraries staff for coordinated maintenance
 
 With the above Google Sheet that is imported as a CSV file using
-``pandas``, it generates a CSV file called
-`data/research_themes.csv <requiam_csv/data/research_themes.csv>`__.
+``pandas``, it generates a CSV file called ``data/research_themes.csv``.
 There are two versions of this file:
 
 - Trusted version, ``master``: `[raw] <https://raw.githubusercontent.com/UAL-ODIS/ReQUIAM_csv/master/requiam_csv/data/research_themes.csv>`__ `[rendered] <https://github.com/UAL-ODIS/ReQUIAM_csv/blob/master/requiam_csv/data/research_themes.csv>`__
 
 - Under developement, ``develop``: `[raw] <https://raw.githubusercontent.com/UAL-ODIS/ReQUIAM_csv/develop/requiam_csv/data/research_themes.csv>`__ `[rendered] <https://github.com/UAL-ODIS/ReQUIAM_csv/blob/develop/requiam_csv/data/research_themes.csv>`__
 
-The `workflow <#workflow>`__ describes how version control will be
+The :ref:`workflow <workflow>` describes how version control will be
 conducted with these two different branches. In general, after a
 maintainer implements a change to the Google Sheet, s/he will perform an
 update to the ``develop`` branch. Once that has been reviewed, a pull
