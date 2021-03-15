@@ -8,9 +8,9 @@ with open("requirements.txt", "r") as fr:
 
 setup(
     name='requiam_csv',
-    version='0.11.1',
+    version='0.12.0',
     packages=['requiam_csv'],
-    url='https://github.com/ualibraries/ReQUIAM_csv',
+    url='https://github.com/UAL-ODIS/ReQUIAM_csv',
     license='MIT License',
     author='Chun Ly',
     author_email='astro.chun@gmail.com',

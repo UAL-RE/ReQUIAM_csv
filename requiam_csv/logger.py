@@ -7,21 +7,19 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)8s: %(message)s', "%H:%
 
 class LogClass:
     """
-    Purpose:
-      Main class to log information to stdout and ASCII logfile
+    Main class to log information to stdout and ASCII logfile
 
     To use:
-    log = LogClass(log_dir, logfile).get_logger()
+      ``log = LogClass(log_dir, logfile).get_logger()``
 
-    Parameters:
-      log_dir: Relative path for exported logfile directory
-      logfile: Filename for exported log file
+    :param log_dir: Relative path for exported logfile directory
+    :param logfile: Filename for exported log file
     """
 
-    def __init__(self, log_dir, logfile):
+    def __init__(self, log_dir: str, logfile: str):
         self.LOG_FILENAME = join(log_dir, logfile)
 
-    def get_logger(self):
+    def get_logger(self) -> logging.Logger:
         log_level = logging.INFO
         log = logging.getLogger(self.LOG_FILENAME)
         if not getattr(log, 'handler_set', None):

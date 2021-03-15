@@ -1,9 +1,11 @@
 # ![CSV Generation Tool for ReQUIAM](img/ReQUIAM_csv_full.png)
 
-[![GitHub build](https://github.com/ualibraries/ReQUIAM_csv/workflows/Python%20package/badge.svg)](https://github.com/ualibraries/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
-![GitHub top language](https://img.shields.io/github/languages/top/ualibraries/ReQUIAM_csv)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ualibraries/ReQUIAM_csv)
-![GitHub](https://img.shields.io/github/license/ualibraries/ReQUIAM_csv?color=blue)
+[![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/UAL-ODIS/ReQUIAM_csv/Python%20package/master?color=blue&label=build%20%28master%29&logo=github)](https://github.com/UAL-ODIS/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22+branch%3Amaster)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/UAL-ODIS/ReQUIAM_csv/Python%20package?color=blue&label=build%20%28latest%29&logo=github)](https://github.com/UAL-ODIS/ReQUIAM_csv/actions?query=workflow%3A%22Python+package%22)
+[![docs](https://img.shields.io/github/workflow/status/UAL-ODIS/ReQUIAM_csv/Sphinx%20Docs%20Check?label=docs&color=blue)](https://github.com/UAL-ODIS/ReQUIAM_csv/actions?query=workflow%3A%22Sphinx+Docs+Check%22)
+![GitHub top language](https://img.shields.io/github/languages/top/UAL-ODIS/ReQUIAM_csv)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/UAL-ODIS/ReQUIAM_csv)
+![GitHub](https://img.shields.io/github/license/UAL-ODIS/ReQUIAM_csv?color=blue)
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
@@ -56,7 +58,7 @@ These instructions will have the code running on your local or virtual machine.
 ### Requirements
 
 You will need the following to have a working copy of this software. See [installation](#installation-instructions) steps:
-1. Python (3.7.5)
+1. Python (>=3.7.9)
 2. [`numpy`](https://numpy.org/doc/) ([1.18.0](https://numpy.org/doc/1.18/))
 3. [`pandas`](https://pandas.pydata.org/) ([0.25.3](https://pandas.pydata.org/pandas-docs/version/0.25.3/))
 
@@ -65,14 +67,14 @@ You will need the following to have a working copy of this software. See [instal
 
 #### Python and setting up a `conda` environment
 
-First, install a working version of Python (v3.7.5).  We recommend using the
+First, install a working version of Python (>=3.7.9).  We recommend using the
 [Anaconda](https://www.anaconda.com/distribution/) package installer.
 
 After you have Anaconda installed, you will want to create a separate `conda` environment
 and activate it:
 
 ```
-$ (sudo) conda create -n rsh_themes python=3.7.5
+$ (sudo) conda create -n rsh_themes python=3.7
 $ conda activate rsh_themes
 ```
 
@@ -98,7 +100,7 @@ You can confirm installation via `conda list`
 (rsh_themes) $ conda list requiam_csv
 ```
 
-You should see that the version is `0.11.1`.
+You should see that the version is `0.12.0`.
 
 
 ### Configuration Settings

@@ -1,4 +1,6 @@
 import numpy as np
+from pandas import DataFrame
+from logging import Logger
 
 from .commons import no_org_code_index
 
@@ -6,27 +8,24 @@ from .commons import no_org_code_index
 off = 2
 
 
-def inspect_csv(df, log):
+def inspect_csv(df: DataFrame, log: Logger):
     """
-    Purpose:
-      Inspects Google Sheet CSV-export table to identify issues.
-      Minor issues are logged. Major issues prevent creating the
-      final CSV file.
+    Inspects Google Sheet CSV-export table to identify issues.
+    Minor issues are logged. Major issues prevent creating the
+    final CSV file.
 
-      Minor issues include:
-       - Entries without an 'Org Code' (i.e., empty rows). Minor because
-         it is excluded in final export
+    Minor issues include:
+     - Entries without an 'Org Code' (i.e., empty rows). Minor because
+       it is excluded in final export
 
-      Major issues include:
-       - Duplicate entries based on Org Code
-       - Invalid/incorrect entries in 'Departments/Colleges/Labs/Centers'
-         This result in not getting a proper Org Code
-       - Missing 'Research Themes' or Sub-portals if either one is provided
-       - TBD
+    Major issues include:
+     - Duplicate entries based on Org Code
+     - Invalid/incorrect entries in 'Departments/Colleges/Labs/Centers'
+       This result in not getting a proper Org Code
+     - Missing 'Research Themes' or Sub-portals if either one is provided
 
-    :param df: pandas dataframe
-    :param log: A LogClass()._get_logger() object
-    :return:
+    :param df: Research Themes dataframe
+    :param log: Logger object
     """
 
     check = 0
