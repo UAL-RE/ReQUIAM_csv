@@ -1,2 +1,1 @@
-pandas==1.2.1
-numpy==1.19.5
+redata>=0.3.0
