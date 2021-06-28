@@ -37,7 +37,7 @@ Next, clone this repository into a parent folder:
 ::
 
    (rsh_themes) $ cd /path/to/parent/folder
-   (rsh_themes) $ git clone https://github.com/UAL-ODIS/ReQUIAM_csv.git
+   (rsh_themes) $ git clone https://github.com/UAL-RE/ReQUIAM_csv.git
 
 With the activated ``conda`` environment, you can install with the
 ``setup.py`` script:
@@ -62,7 +62,7 @@ Configuration Settings
 ----------------------
 
 Configuration settings are specified through the
-`default.ini <https://github.com/UAL-ODIS/ReQUIAM_csv/blob/master/requiam_csv/default.ini>`__ file. These settings
+`default.ini <https://github.com/UAL-RE/ReQUIAM_csv/blob/master/requiam_csv/default.ini>`__ file. These settings
 include the Google Sheet information and CSV file names (do **not**
 change as this will break ReQUIAM).
 

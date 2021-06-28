@@ -19,9 +19,9 @@ With the above Google Sheet that is imported as a CSV file using
 ``pandas``, it generates a CSV file called ``data/research_themes.csv``.
 There are two versions of this file:
 
-- Trusted version, ``master``: `[raw] <https://raw.githubusercontent.com/UAL-ODIS/ReQUIAM_csv/master/requiam_csv/data/research_themes.csv>`__ `[rendered] <https://github.com/UAL-ODIS/ReQUIAM_csv/blob/master/requiam_csv/data/research_themes.csv>`__
+- Trusted version, ``master``: `[raw] <https://raw.githubusercontent.com/UAL-RE/ReQUIAM_csv/master/requiam_csv/data/research_themes.csv>`__ `[rendered] <https://github.com/UAL-RE/ReQUIAM_csv/blob/master/requiam_csv/data/research_themes.csv>`__
 
-- Under developement, ``develop``: `[raw] <https://raw.githubusercontent.com/UAL-ODIS/ReQUIAM_csv/develop/requiam_csv/data/research_themes.csv>`__ `[rendered] <https://github.com/UAL-ODIS/ReQUIAM_csv/blob/develop/requiam_csv/data/research_themes.csv>`__
+- Under developement, ``develop``: `[raw] <https://raw.githubusercontent.com/UAL-RE/ReQUIAM_csv/develop/requiam_csv/data/research_themes.csv>`__ `[rendered] <https://github.com/UAL-RE/ReQUIAM_csv/blob/develop/requiam_csv/data/research_themes.csv>`__
 
 The :ref:`workflow <workflow>` describes how version control will be
 conducted with these two different branches. In general, after a
