@@ -10,7 +10,7 @@ setup(
     name='requiam_csv',
     version='0.12.1',
     packages=['requiam_csv'],
-    url='https://github.com/UAL-ODIS/ReQUIAM_csv',
+    url='https://github.com/UAL-RE/ReQUIAM_csv',
     license='MIT License',
     author='Chun Ly',
     author_email='astro.chun@gmail.com',

@@ -23,5 +23,5 @@ follows:
 4. If the changes are what you expect, conduct the full execution
 5. Update the version number in README.md, ``__init__.py``, and setup.py
 6. Perform a ``git add`` and ``git commit`` for ‘data/research_themes.csv’ and the above files to ``develop``
-7. Create a pull request `here <https://github.com/UAL-ODIS/ReQUIAM_csv/compare/develop?expand=1>`__
+7. Create a pull request `here <https://github.com/UAL-RE/ReQUIAM_csv/compare/develop?expand=1>`__
 8. Update your local git repository with ``git pull --all``
