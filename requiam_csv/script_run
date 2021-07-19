@@ -11,7 +11,7 @@ import configparser
 import argparse
 
 from requiam_csv.create_csv import create_csv
-from requiam_csv.logger import LogClass
+from redata.commons.logger import log_setup
 
 today = date.today()
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     logfile_prefix = config.get('global', 'logfile_prefix')
     logfile = f"{logfile_prefix}.{today.strftime('%Y-%m-%d')}.log"
 
-    log = LogClass(log_dir, logfile).get_logger()
+    log = log_setup(log_dir, logfile)
 
     log.info("Started script_run")
 

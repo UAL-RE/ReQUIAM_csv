@@ -27,11 +27,3 @@ Submodules
    :members:
    :undoc-members:
    :show-inheritance:
-
-``logger`` module
-~~~~~~~~~~~~~~~~~
-
-.. automodule:: requiam_csv.logger
-   :members:
-   :undoc-members:
-   :show-inheritance:
