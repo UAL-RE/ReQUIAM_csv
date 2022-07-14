@@ -1,9 +1,6 @@
 Getting Started
 ===============
 
-These instructions will have the code running on your local or virtual
-machine.
-
 Requirements
 ------------
 
@@ -23,7 +20,6 @@ Python and setting up a ``conda`` environment
 You have already followed the same installation instructions 
 from `ReQUIAM <https://requiam.readthedocs.io/en/latest/getting_started.html>`
 
-
 Next, clone this repository into a parent folder:
 
 ::
@@ -40,7 +36,7 @@ With the activated ``conda`` environment, you can install with the
    (admin1) $ (sudo) python setup.py develop
 
 This will automatically installed the required ``numpy`` and ``pandas``
-packages.
+packages. The versions shall be the same as these of redata-commons and ReQUIAM.
 
 You can confirm installation via ``conda list``
 
