@@ -8,12 +8,12 @@ with open("requirements.txt", "r") as fr:
 
 setup(
     name='requiam_csv',
-    version='0.12.3',
+    version='0.13.0',
     packages=['requiam_csv'],
     url='https://github.com/UAL-RE/ReQUIAM_csv',
     license='MIT License',
-    author='Chun Ly',
-    author_email='astro.chun@gmail.com',
+    author='Yan Han',
+    author_email='yhan818@gmail.com',
     description='Construct list of research themes and organization mapping to work with figshare patron management',
     long_description=long_description,
     long_description_content_type='text/markdown',
