@@ -1,6 +1,6 @@
 Authors
 =======
-
+-  Yan Han (`@yhan818 <http://www.github.com/yhan818>`__) -
 -  Chun Ly, Ph.D. (`@astrochun <http://www.github.com/astrochun>`__) -
    `University of Arizona Libraries <https://github.com/ualibraries>`__,
    `Research Engagement <https://github.com/UAL-RE>`__

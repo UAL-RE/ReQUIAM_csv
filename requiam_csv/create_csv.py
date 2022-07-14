@@ -1,6 +1,6 @@
 from os import path
-import pandas as pd  # Currently using v0.25.3
-import numpy as np   # Currently using v1.18.0
+import pandas as pd  # pandas and numpy version can be found via "conda list"
+import numpy as np 
 from urllib.error import URLError
 
 from .inspect_csv import inspect_csv

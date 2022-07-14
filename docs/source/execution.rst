@@ -7,7 +7,7 @@ override the main CSV file (data/research_themes.csv), include the
 
 ::
 
-   (rsh_themes) $ python requiam_csv/script_run --execute
+   (admin1) $ python requiam_csv/script_run --execute
 
 .. _workflow:
 

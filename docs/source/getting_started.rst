@@ -1,18 +1,15 @@
 Getting Started
 ===============
 
-These instructions will have the code running on your local or virtual
-machine.
-
 Requirements
 ------------
 
 You will need the following to have a working copy of this software. See
 `installation <#installation-instructions>`__ steps:
 
-1. Python (>=3.7.9)
-2. `numpy <https://numpy.org/doc/>`__ (`1.18.0 <https://numpy.org/doc/1.18/>`__)
-3. `pandas <https://pandas.pydata.org/>`__ (`0.25.3 <https://pandas.pydata.org/pandas-docs/version/0.25.3/>`__)
+1. Python (>=3.8)
+2. `numpy <https://numpy.org/doc/>`__ (`1.23.0 <https://numpy.org/doc/1.23/>`__)
+3. `pandas <https://pandas.pydata.org/>`__ (`1.4.3 <https://pandas.pydata.org/docs/whatsnew/v1.4.3.html>`__)
 
 Installation Instructions
 -------------------------
@@ -20,43 +17,34 @@ Installation Instructions
 Python and setting up a ``conda`` environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, install a working version of Python (>=3.7.9). We recommend using
-the `Anaconda <https://www.anaconda.com/distribution/>`__ package
-installer.
-
-After you have Anaconda installed, you will want to create a separate
-``conda`` environment and activate it:
-
-::
-
-   $ (sudo) conda create -n rsh_themes python=3.7
-   $ conda activate rsh_themes
+You shall follow the same installation instructions 
+from `ReQUIAM <https://requiam.readthedocs.io/en/latest/getting_started.html>`__
 
 Next, clone this repository into a parent folder:
 
 ::
 
-   (rsh_themes) $ cd /path/to/parent/folder
-   (rsh_themes) $ git clone https://github.com/UAL-RE/ReQUIAM_csv.git
+   (admin1) $ cd /path/to/parent/folder
+   (admin1) $ git clone https://github.com/UAL-RE/ReQUIAM_csv.git
 
 With the activated ``conda`` environment, you can install with the
 ``setup.py`` script:
 
 ::
 
-   (rsh_themes) $ cd /path/to/parent/folder/ReQUIAM_csv
-   (rsh_themes) $ (sudo) python setup.py develop
+   (admin1) $ cd /path/to/parent/folder/ReQUIAM_csv
+   (admin1) $ python setup.py develop
 
 This will automatically installed the required ``numpy`` and ``pandas``
-packages.
+packages. The versions shall be the same as these of redata-commons and ReQUIAM.
 
 You can confirm installation via ``conda list``
 
 ::
 
-   (rsh_themes) $ conda list requiam_csv
+   (admin1) $ conda list requiam_csv
 
-You should see that the version is ``0.12.0``.
+You should see that the version is ``0.13.0``.
 
 Configuration Settings
 ----------------------
@@ -75,4 +63,4 @@ file called ``dry_run.csv``:
 
 ::
 
-   (rsh_themes) $ python requiam_csv/script_run
+   (admin1) $ python requiam_csv/script_run
