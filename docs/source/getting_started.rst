@@ -17,8 +17,8 @@ Installation Instructions
 Python and setting up a ``conda`` environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You have already followed the same installation instructions 
-from `ReQUIAM <https://requiam.readthedocs.io/en/latest/getting_started.html>`
+You shall follow the same installation instructions 
+from `ReQUIAM <https://requiam.readthedocs.io/en/latest/getting_started.html>`__
 
 Next, clone this repository into a parent folder:
 
@@ -33,7 +33,7 @@ With the activated ``conda`` environment, you can install with the
 ::
 
    (admin1) $ cd /path/to/parent/folder/ReQUIAM_csv
-   (admin1) $ (sudo) python setup.py develop
+   (admin1) $ python setup.py develop
 
 This will automatically installed the required ``numpy`` and ``pandas``
 packages. The versions shall be the same as these of redata-commons and ReQUIAM.
@@ -42,7 +42,7 @@ You can confirm installation via ``conda list``
 
 ::
 
-   (rsh_themes) $ conda list requiam_csv
+   (admin1) $ conda list requiam_csv
 
 You should see that the version is ``0.13.0``.
 
@@ -63,4 +63,4 @@ file called ``dry_run.csv``:
 
 ::
 
-   (rsh_themes) $ python requiam_csv/script_run
+   (admin1) $ python requiam_csv/script_run
