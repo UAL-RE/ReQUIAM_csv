@@ -1,13 +1,5 @@
----
-name: Bug
-about: Provide specifics about a PR for a bug fix
-title: 'PR/Bug: ____(provide a descriptive name)'
-labels: bug, p1
-assignees: ''
 
----
 <!-- IMPORTANT: Please do not create a PR without creating an issue first. -->
-
 <!-- Fields in **bold** are REQUIRED, fields in *italics* are OPTIONAL. -->
 
 **Description**
@@ -16,15 +8,6 @@ assignees: ''
 <!-- Add any linked issue(s) -->
 Fixes #
 
-**Bump version**
-
-v0.xx.x -> v0.xx.x
-
-- [ ] README.md, [installation instructions](../../README.md#installation-instructions)
-- [ ] [`setup.py`](../../setup.py)
-- [ ] [`requiam_csv/__init__.py`](../../requiam_csv/__init__.py)
-
-
 *Screenshots or additional context*
 <!-- Add any other context about the problem here and/or screenshots to help explain the problem. -->
 
@@ -32,3 +15,4 @@ v0.xx.x -> v0.xx.x
 *Testing (if applicable)*
 <!-- Explain how you tested this bug fix so that others can replicate it. -->
 <!-- Example: The exact commands you ran and their output. -->
+- [ ] python requiam_csv/script_run --execute
