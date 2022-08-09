@@ -2,7 +2,7 @@
 
 **Description**
 <!-- Do not push the release tag until this PR is merged -->
-This pull request updates ReQUIAM v0.xx.x -> v0.xx.0
+This pull request updates v0.xx.x -> v0.xx.0
 
 **Update Changelog**
 <!-- List changes: be brief, use imperative mood or simple noun phrases and add linked issues -->
